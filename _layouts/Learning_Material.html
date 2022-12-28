@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+{% include head.html %}
+{% include header.html %} 
+<style> 
+  #Video_Results
+  {
+	  
+	  font-family: 'Lato', sans-serif;
+	  
+  }
+  #vid-title
+  {
+	font-size: 25px;
+	  font-family: 'Lato', sans-serif;
+  }
+#li-margin
+{
+	text-align: center;
+	margin-bottom: 100px;
+}
+	
+#vidDec
+{
+	font-size: 18px;
+	color: #666;
+	font-family: 'Lato', sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+	
+	
+	<section class="major">
+		<div class="inner">
+			<span class="image">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+			</span>
+			<header class="major">
+  
+				<h1>{{ page.title }}</h1>
+  
+			</header>
+		</div>
+	 </section>
+	
+
+
+	 <section class="major">
+		<div class="inner">
+	 
+            
+			
+     
+    		
+            <ul style="list-style-type:none" id="Video_Results"></ul>
+			
+        
+    
+			 
+		</div>
+	</section>
+	 
+
+
+	<br><br>
+
+
+	 {% include footer.html %}
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/script.js"></script>
+</html>

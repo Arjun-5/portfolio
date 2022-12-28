@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+<head>
+    
+<style> 
+
+.card{
+    background-color:rgba(43, 5, 68, 0);
+    border-radius: 15%;
+}
+.card-img-top{
+    border-radius: 5%;
+}
+.lSAction > a {
+    background-image: url("{{ site.baseurl }}/assets/images/controls.png");
+    border-bottom: none;
+}
+
+.landbox1{
+
+    background:url("{{ site.baseurl }}/assets/images/More_Info.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.landbox2{
+
+    background:url("{{ site.baseurl }}/assets/images/WhoWeAre.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+}
+/*.blitzbox1:hover, .blitzbox2:hover{
+	width: 420px;
+	height: 220px;
+}*/
+
+.glow-on-hover {
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+    {% include header.html %}
+
+    <!-- Banner -->
+    <section id="bgImage" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <a style="text-align: center;" href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover" type="button">{{ site.description }}</a>
+                <ul class="actions">
+                    <li><a style="text-align: center;" href="{{ site.baseurl }}/Learning_Material.html" class="glow-on-hover" type="button">Learning Material</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    
+
+        <!-- One -->
+        <!--{% include tiles.html %} -->
+
+        
+        <!-- Div Inner is required for proper alignment of contents-->
+        <section id="bgImageLand" class="major">
+            <div class="inner">
+                <h2 class="spacingh2">CHOOSE YOUR GAME</h2>
+                <div class="container-fluid">
+                    <!--slider------------------->
+                <ul id="autoWidth" class="cs-hidden">
+                    <!--1------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                  <a href="{{ site.baseurl }}/game1.html">
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/DouDizhu.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/g1.png" class="containerLogo">
+                    <!--character-details-->
+                    <!--<h4>Fight the Landlord</h4>-->
+                    <p>A standard game includes dealing, bidding, playing, and scoring with three players using a 54-card deck (with two jokers)</p>
+                    </div>
+                    
+                    </div></a>
+                </li>
+                    <!--2------------------------------>
+                <li class="item-a">
+                  <!--slider-box-->
+                  <a href="{{ site.baseurl }}/game2.html">
+                    <div class="containerBox">
+                    <!-- <p class="marvel">MARVEL</p> -->
+                    <!--model-->
+                    <img src="{{ site.baseurl }}/assets/images/g2.png" class="containerModel">
+                    <!--details-->
+                    <div class="containerDetails">
+                    <!--logo-character-->
+                    <img src="{{ site.baseurl }}/assets/images/g2logo.png" class="containerLogo">
+                    <!--character-details-->
+                    
+                    <p>The game contains many complexities like Radomness, partial observability, big observation space, etc.</p>
+                    </div>
+                    
+                    </div></a>
+                </li>
+                <li class="item-a">
+                    <a href="{{ site.baseurl }}/game3.html">
+                    <div class="containerBox">
+                   
+                    <img src="{{ site.baseurl }}/assets/images/g3.png" class="containerModel">
+                   
+                    <div class="containerDetails">
+                   
+                    <img src="{{ site.baseurl }}/assets/images/g3logo.png" class="containerLogo" >
+                   
+                    <p>Quantum Chess is a variation of the classical game of chess, where the pieces have quantum properties. </p>
+                    </div>
+                    
+                    </div></a>
+                </li>
+                     
+                <li class="item-a">
+                 
+                    
+                        <div class="containerBox">
+                        <!-- <p class="marvel">MARVEL</p> -->
+                        <!--model-->
+                        <img src="{{ site.baseurl }}/assets/images/g4.png" class="containerModel">
+                        <!--details-->
+                        <div class="containerDetails">
+                        <!--logo-character
+                        <img src="{{ site.baseurl }}/assets/images/g1.png" class="containerLogo">-->
+                        <!--character-details-->
+                        <h2 style="background: -webkit-linear-gradient(rgb(255, 1, 1), rgb(255, 255, 255));-webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">Loading...</h2>
+                        <p>More interesting and cool games are to follow</p>
+                        </div>
+                    
+                    </div> 
+                </li>
+                  
+                
+                </ul>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Two -->
+        <section id="bgImageLand" class="major">
+            <div class="inner">
+                
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <a style="border:none; box-shadow:none;" href="{{ site.baseurl }}/Learning_Material.html">
+                        <img src="{{ site.baseurl }}/assets/images/t3.png" class="card-img-top" alt="moreinfo"></a>
+                        <div class="card-body text-center">
+                          <a href="{{ site.baseurl }}/Learning_Material.html" class="glow-on-hover" type="button">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <a style="border:none; box-shadow:none;" href="{{ site.baseurl }}/About_Us.html">
+                        <img src="{{ site.baseurl }}/assets/images/t4.png" class="card-img-top" alt="whoweare"></a>
+                        <div class="card-body text-center">
+                          <a href="{{ site.baseurl }}/About_Us.html" class="glow-on-hover" type="button">Find More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+        
+        
+               
+
+            </div>
+        </section>
+<br><br>
+    {% include footer.html %}
+</body>
+
+
+<!-- This is also includeed in footer check in future if any jquery button issues -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
+<script type="text/javascript">
+    // JavaScript Document
+    $(document).ready(function() {	
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            speed:1000,
+            auto:true,
+            loop:true,
+            slideMargin:100,
+            pauseOnHover: true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+</script>
+</html>

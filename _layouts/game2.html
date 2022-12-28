@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+<head>
+  {% include head.html %}
+  {% include header.html %} 
+
+<style>
+#bggame{
+    height: 60vh;
+}
+.gameimage{
+	width:25%;
+	float: left;
+	margin-right: 50px;
+    margin-top: -50px;
+}
+
+</style>
+
+</head>
+  <body>
+
+    
+    <section class="major">
+      <div class="inner">
+          
+          <header class="text-center">
+
+              <h1>Hanabi</h1>
+              
+
+          </header>
+      </div>
+   </section>
+
+   
+   <section id="bggame" class="major">
+    <div class="inner">
+        
+       
+        {{ content }}
+    </div>           
+</section>
+<section class="major">
+    <div class="inner">
+
+  <p>If you have not seen the game before, I think it is a good time to click at (put them in parallel or make a 
+    box 2x2) </p>
+  
+    <p>English: Hanabi Review - with Tom Vasel</p>
+    <div class="ratio ratio-16x9">
+      <iframe style="padding: 7%" src="https://www.youtube.com/embed/FZlk3rHbPcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><br>
+  
+    <p>French: LudoChrono - Hanabi</p>
+    <div class="ratio ratio-16x9">
+      <iframe style="padding: 7%" src="https://www.youtube.com/embed/vG9-letaXCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><br>
+
+    <p>Portugese: TRAPAÇAS no De Quem é a Vez? - MAGIC MAZE & HANABI - Jhonny Drumond, Thati Lopes e Victor Lamoglia</p>
+    <div class="ratio ratio-16x9">
+      <iframe style="padding: 7%" src="https://www.youtube.com/embed/w4aRUN_cMYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><br>
+
+    <p>German: Hanabi (Spiel des Jahres 2013) - Spiel - Kartenspiel - Board Game - Review #10</p>
+    <div class="ratio ratio-16x9">
+      <iframe style="padding: 7%" src="https://www.youtube.com/embed/FBaXXeIsx1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    </div><br>
+  
+    <p>Because of this special communication system, it is possible to generate an astronomical number of 
+    winning strategies, which are totally incompatible with each other. This means that when people 
+    consciously agree on a strategy, the game is being completed successfully. However, if these strategies 
+    are picked at random, we end up in a disaster. Unlike with zero-sum competitive games like Go, since 
+    the choices that an agent is doing in the game, depend on their interpretation of your intentions, it is 
+    impossible to find a strategy that works for everyone. <br><br>
+    Because of this communication peculiarity, Hanabi was proposed by google as a good testbed for 
+    creating agents that can successfully engage in cooperative tasks in ad-hoc setting, i.e., paired with 
+    agents that have not seen before. In order to do this, we believe that an agent should be able to create 
+    models of other agents that are sufficient to finish the game. However, these models must have two 
+    main properties. First, they must be sufficient in order to have a universal model-based strategy that 
+    successfully completes the game. They have to be quite reduced and light so they can be produced only 
+    after a small number of games. That is why Hanabi, seems like the perfect ground to form and test 
+    meta-learning algorithms applied to decision making. <br><br>
+    Our roadmap has three stops. First, we create a pool of diverse agents that they carry a winning 
+    strategy. These agents are quite fixed and not adaptable, and they serve as data-points on the space of 
+    possible strategies. For the creation of these pools, we try three different Evolutionary methods. The first is with ruled based agents, the second with reward shaping and the third using Neuroevolution. 
+    With the completion of the pool, the second step is about forming models of these agents. Through 
+    Reinforcement learning, an agent will be trained to play with these agents, given these models. <br><br>
+    One can find updates of our project at <a href="https://www.researchgate.net/project/Hanabi-2">https://www.researchgate.net/project/Hanabi-2</a> and the latest 
+    version of code and agents in our github page: <a href="https://github.com/orgs/Hanabi-Game-Project/dashboard">https://github.com/orgs/Hanabi-GameProject/dashboard.</a></p>
+
+</div>
+</section>
+    
+
+{% include footer.html %}
+
+  </body>
+
+</html>
