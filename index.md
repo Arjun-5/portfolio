@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Metaskepsis'
+landing-title: 'Arjun Rahul Portfolio'
 description: null
 image: null
 author: null

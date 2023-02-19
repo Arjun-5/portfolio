@@ -1,15 +1,15 @@
 # site settings
-title: Metaskepsis
+title: LostThoughtStudios
 subtitle:
-email: artnoage@gmail.com
+email: rahult5@live.in
 description: About Our Group
 baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: Technische Universität Berlin 
-city: Straße des 17. Juni 135
+street_address: Lehrter Straße 
+city:
 state:  Berlin
-zip_code: 10623
+zip_code: 10557
 country: Germany
 phone: (XXX) XXX-XXXX
 

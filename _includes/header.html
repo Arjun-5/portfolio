@@ -1,10 +1,20 @@
 <!-- Wrapper -->
+<style>
+
+.logoImage {
+  	border-radius: 4px;
+  	padding: 5px;
+  	width: 200px;
+}
+
+</style>
+
 <div id="wrapper">
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
 	
-	<a style="border-style:none" href="{{ "" | absolute_url }}/"><strong class="logo">{{ site.title }}</strong> <!--<span>{{ site.subtitle }}</span></a>-->
+	<a style="border-style:none" href="{{ "" | absolute_url }}/"><strong class="logo"><img class="logoImage" src="{{ site.baseurl }}/assets/images/LTLogo.svg"/></strong> <!--<span>{{ site.subtitle }}</span></a>-->
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -22,28 +32,7 @@
 		<li><a href="{{ site.baseurl }}/About_Us.html">About Us</a></li> 
 		<!--<li><a href="{{ site.baseurl }}/More_Info.html">More Info</a></li>--> 
 		<li><a href="{{ site.baseurl }}/Learning_Material.html">Learning Material</a></li>
-		<li><a href="{{ site.baseurl }}/Contact_Us.html">Contact Us</a></li> 
+		<li><a href="{{ site.baseurl }}/Contact_Me.html">Contact Me</a></li> 
 	</ul>
-
-
-
-
-
-	<!--	{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-	</ul>
-	
-	<ul class="actions vertical">
-		<li><a href="#contact" class="button special fit">Get Started</a></li>
-		
-		
-		 <li><a href="#" class="button fit">Log In</a></li> 
-	</ul>-->
-
-
-
 
 </nav>
