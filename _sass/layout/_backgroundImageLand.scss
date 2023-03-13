@@ -9,7 +9,7 @@
 #bgImageLand {
 	@include vendor('align-items', 'center');
 	//@include vendor('background-image', 'url("../images/66.jpg")');
-	@include vendor('background-image', 'url("../images/Background.gif")');
+	@include vendor('background-image', 'url("../images/animBackground.gif")');
 	@include vendor('display', 'flex');
 	@include padding(4em, 0, (2em, 0, 0, 0));
 	background-attachment: fixed;

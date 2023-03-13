@@ -1,0 +1,66 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">I was one of the many participants of this wonderful <a href="https://www.wearevr.berlin">hackathon</a> aimed at VR/Game developers all over the 
+            world, held in Berlin from 3<sup>rd</sup> 
+            August to 19<sup>th</sup> August. We were supposed to propose novel solutions to a virtual helicopter 
+            cockpit by not emulating the existing cockpit setup but re-designing to utilize the full power of VR.
+          </p>
+      </header>
+
+      <header class = "major">
+        <h1>Our Idea</h1>
+        <img src="{{ site.baseurl }}/assets/images/IdeaNapkin.png">
+      </header>
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> Unreal Engine 5.0, Arcgis, Cesium for Unreal Engine, Oculus Quest 2, Photoshop and ArcGIS CityEngine</p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <p class="textColor" style="color: #F2AA4C;"><i class="material-icons" style="color:red">filter_vintage</i>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/rahult5/">Rahul</a> - VR Development Using Unreal Engine (C++/Blueprint) and 
+          some UI designing using Photoshop and research on Arcgis and Cesium for Game Engine</p><br>
+        <p class="textColor" style="color: #F2AA4C;"><i class="material-icons" style="color:red">filter_vintage</i>&nbsp;&nbsp;&nbsp;<a href="www.linkedin.com/in/palaniappan-mohan">Palaniappan Mohan</a>- UI designing using Photoshop, 3D City 
+          designing using Arcgis CityEngine and research on Arcgis and Cesium for Game Engine</p>
+      </header>
+
+      <header class ="major">
+        <h1>Project Description</h1>
+        <p class="textColor">The project was setup completely in Unreal Engine 5.0 and it was designated to run on Oculus Quest 2 VR device. The 
+          development spanned over a period of two weeks - I was mostly working on it after my work hours. The aim was to sort of
+          bring a balance between the existing setup and pitch in some level of invovation. This way we make it easier for people 
+          to relate with the existing setup and possible updation that could make things a lot easier to comprehend. Here's a video 
+          recording that demonstrates the solution we pitched on this hackathon.
+        </p>
+        <br> <br>
+        <iframe src="https://drive.google.com/file/d/1Aqv_wocrHh2DzlagYKC0n52F2mFw4DnT/preview" width="1080" 
+        height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <br><br>
+        <p class="textColor">We esnured that there is a good amount of interaction involved in the application so that the 
+          participants will feel a great level of immersion thereby disconnecting themselves from the real world. Most of the controls
+          can only be operated by physical movement of your hands which in turns drives the helicopter around in the scene.
+          The 3D environment, Tempelhof Field, choosen for the application is constructed in Arcgis CityEngine. This provided
+          us an opportunity to place a real world environment with some realistic terrain and obstacles 
+        </p>
+      </header>
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+</html>
