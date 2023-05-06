@@ -16,13 +16,13 @@ nav-menu: true
             <div class="contentPosition">
               <h2>Aerospace Hackathon</h2>
               <h3>Virtual Reality Application</h3>
-              <p>Create a VR prototype to showcase 9 important flight parameters  and 4 controls sytems. Also can extend our proposal by any topic related idea such as remote capaprojectImageslity, autonomous flight etc.</p>
+              <p>Create a VR prototype to showcase 9 important flight parameters  and 4 controls sytems. Also extend our proposal by any topic related idea such as remote capability, autonomous flight etc.</p>
             </div>
           </a>
         </div>
         <div class="blitzbox">
-          <a href="{{ site.baseurl }}/weareVR.html">
-            <div class="img-box"  title="Muensterhack 2022">
+          <a href="{{ site.baseurl }}/munsterHack.html">
+            <div class="img-box"  title="MÜNSTERHACK 2022">
               <img src="{{ site.baseurl }}/assets/images/projectImages/muensterhack.png" alt="">
             </div>
             <div class="contentPosition"> 

@@ -1,0 +1,116 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">A VR app using Unity game engine was developed by me as a part of an online hackathon aimed at
+            creating an interactive solution for NFT viewing and bidding via virtual reality.  
+          </p>
+      </header>
+
+      <header class = "major">
+        <h1>Proposed Idea</h1>
+        <p class="textColor"> The prototype demonstrate a virutal reality room where one has the opportunity to view all of the possible events
+          that resides in the blockchain. The room has the capability to request for information from the backend system and
+          present these information such as images, videos and text stored in the room. They also have the option to bid on a
+          specific NFT from the virtual reality application.
+        </p>
+      </div>
+      </header>
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> Unity Engine, and Oculus Quest</p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <ul class="textColor customList" style="color: #F2AA4C;">
+          <li>
+            <a href = "https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Prototype development Using Unity Engine (C#) and testing the final product on Oculus Quest 2. 
+          </li>
+        </ul>
+      </header>
+
+      <header class ="major">
+        <h1>Project Description</h1>
+        <p class="textColor">The project was setup completely in Unity Engine and it was designated to run on Oculus quest devices. 
+          The development spanned over a period of 10 days - I was mostly working on it after my work hours. The aim was to create
+          an interactive environment that allows users to view and bid on various available NFT's from virtual reality. There was 
+          a web version that allows one to perform the same but I was approached by a friend of mine to create a VR version so that 
+          they could offer an interactive version of the same product.
+        </p>
+        <br>
+        <iframe src="https://drive.google.com/file/d/1IOwrVn2qNlhpLxASVpVJEkQkBwugHQGs/preview" width="1080" 
+        height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <br>
+        <p class="textColor">This was just a prototype that was designed to facilitate all of the requirements in a short of span 
+          of time due to the hackathon time constraints.
+        </p>
+        <br>
+      </header>
+
+      <header class="major">
+        <h1>Event Photo</h1>
+        <img src="{{ site.baseurl }}/assets/images/MunsterHack/munsterHack.jpeg">
+      </header>
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#muensterhackLightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>
