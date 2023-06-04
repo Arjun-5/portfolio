@@ -23,7 +23,7 @@ nav-menu: true
         <div class="blitzbox">
           <a href="{{ site.baseurl }}/munsterHack.html">
             <div class="img-box"  title="MÜNSTERHACK 2022">
-              <img src="{{ site.baseurl }}/assets/images/projectImages/muensterhack.png" alt="">
+              <img src="{{ site.baseurl }}/assets/images/projectImages/mshack.png" alt="">
             </div>
             <div class="contentPosition"> 
               <h2>HACKATHON FÜR MÜNSTER</h2>
