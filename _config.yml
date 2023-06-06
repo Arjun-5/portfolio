@@ -29,7 +29,7 @@ pinterest_url:
 slack_url: #www.slack.com
 twitter_url: #www.twitter.com
 youtube_url: #https://www.youtube.com
-globe_url:  https://www.arjunportfolio5.wordpress.com
+globe_url:  https://arjunportfolio5.wordpress.com
 
 # build settings
 markdown: kramdown
