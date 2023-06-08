@@ -45,7 +45,7 @@ nav-menu: true
           </a>
         </div>
         <div class="blitzbox">
-          <a href="{{ site.baseurl }}/munsterHack.html">
+          <a href="{{ site.baseurl }}/esmtApp.html">
           <div class="img-box" title="ESMT Mobile App">
 	          <img src="{{ site.baseurl }}/assets/images/projectImages/esmt_App.png" alt="">
           </div>
