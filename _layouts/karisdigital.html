@@ -1,0 +1,103 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">After gradution from TU Berlin I joined a Berlin based healthcare startup, <a 
+            href="https://www.karisdigital.com" target="_blank">Karis Digital</a>. The company comprised of three members (including 
+            me) and I was the only programmer that was working on the prototype so that we could present our idea to potential 
+            investors to provide additional funding once the current funding from the Berlin senate runs out. My task was to create
+            a mental puzzle game and a painting application with a multiplayer community setup. The puzzle game can be accessed from 
+            <a href="https://artmonia-karisdigital.github.io/ArtTherapy-WebVR/">this link</a>. The painting application can be accessed
+            from <a href="https://karis-webgame.web.app">this link</a>.
+            </p>
+      </header>
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> Unity Game Engine</p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <ul class="textColor customList" style="color: #F2AA4C;">
+          <li>
+            <a href = "https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Development using Unity Engine and testing on Android devices and Bluestacks. 
+          </li>
+        </ul>
+      </header>
+
+      <header class ="major">
+        <h1>Project Description</h1>
+        <p class="textColor">My task with this app was to get their current cms setup moved from a private server (managed by the
+          existing developer) to something that can be managed and accessed by the stakeholders of Karo Labs. Initially I setup the
+          system to use Firebase for asset management (images and videos) since the free tier of Firebase comes with some limitations
+          I had to switch it to something else, a cost free setup. That's when I thought of managing the assets from Dropbox and load them
+          into the application as needed. After completing the CMS setup I had to make some aesthetic changes in the application,
+          UI design changes and some cleanup works to make the application look better in general. 
+        </p>
+        <br>
+        <iframe src="https://drive.google.com/file/d/10vKm0DPMKG_LseN6BRh2cuLK1Z107Wgy/preview" width="1080" 
+        height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+      </header>
+
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#vrHackathonLightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>
