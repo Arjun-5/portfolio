@@ -1,0 +1,460 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+} */
+
+.resumebody {
+  /* background: #585c68; */
+  font-size: 14px;
+  line-height: 22px;
+  /* color: #555555; */
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  /*  width: 800px; */
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #b87333;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b87333;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b87333;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #b87333;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: black;
+  font-weight: bold;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background:black;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: black;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #b87333;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 120px;
+  background: #b87333;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #b87333;
+  border-radius: 50%;
+  position: relative;
+  color: #b87333;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #b87333;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+</style>
+<body>    
+  <section>
+    <div class="inner resumebody">
+      <header class="major">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+        <div class="resume">
+           <div class="resume_left">
+             <div class="resume_profile">
+               <img src="{{ site.baseurl }}/assets/images/Me.png" alt="profile_pic">
+             </div>
+             <div class="resume_content">
+               <div class="resume_item resume_info">
+                 <div class="title">
+                   <p class="bold">Rahul Thangaraj</p>
+                   <p class="regular">Game/VR Developer</p>
+                 </div>
+                 <ul>
+                   <li>
+                     <div class="icon">
+                       <i class="fas fa-map-signs"></i>
+                     </div>
+                     <div class="data">
+                       69a Lehrter Straße, 10557 Berlin <br /> Germany
+                     </div>
+                   </li>
+                   <li>
+                     <div class="icon">
+                       <i class="fas fa-mobile-alt"></i>
+                     </div>
+                     <div class="data">
+                       
+                     </div>
+                   </li>
+                   <li>
+                     <div class="icon">
+                       <i class="fas fa-envelope"></i>
+                     </div>
+                     <div class="data">
+                       rahult5@outlook.in
+                     </div>
+                   </li>
+                   <li>
+                     <div class="icon">
+                       <i class="fab fa-weebly"></i>
+                     </div>
+                     <div class="data">
+                      https://arjun-5.github.io/portfolio/
+                     </div>
+                   </li>
+                 </ul>
+               </div>
+               <div class="resume_item resume_skills">
+                 <div class="title">
+                   <p class="bold">skill's</p>
+                 </div>
+                 <ul>
+                   <li>
+                     <div class="skill_name">
+                       Unity Engine
+                     </div>
+                     <div class="skill_progress">
+                       <span style="width: 80%;"></span>
+                     </div>
+                     <div class="skill_per">80%</div>
+                   </li>
+                   <li>
+                     <div class="skill_name">
+                       Unreal Engine
+                     </div>
+                     <div class="skill_progress">
+                       <span style="width: 70%;"></span>
+                     </div>
+                     <div class="skill_per">70%</div>
+                   </li>
+                   <li>
+                     <div class="skill_name">
+                       C#
+                     </div>
+                     <div class="skill_progress">
+                       <span style="width: 70%;"></span>
+                     </div>
+                     <div class="skill_per">70%</div>
+                   </li>
+                   <li>
+                     <div class="skill_name">
+                       C++
+                     </div>
+                     <div class="skill_progress">
+                       <span style="width: 50%;"></span>
+                     </div>
+                     <div class="skill_per">50%</div>
+                   </li>
+                   <li>
+                     <div class="skill_name">
+                       Maya
+                     </div>
+                     <div class="skill_progress">
+                       <span style="width: 85%;"></span>
+                     </div>
+                     <div class="skill_per">85%</div>
+                   </li>
+                 </ul>
+               </div>
+               <div class="resume_item resume_social">
+                 <div class="title">
+                   <p class="bold">Social</p>
+                 </div>
+                 <ul>
+                   <li>
+                     <div class="icon">
+                       <i class="fab fa-linkedin"></i>
+                     </div>
+                     <div class="data">
+                       <p class="semi-bold">Linkedin</p>
+                       <p>https://www.linkedin.com/
+                        in/rahult5/</p>
+                     </div>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+          </div>
+          <div class="resume_right">
+            <div class="resume_item resume_about">
+                <div class="title">
+                   <p class="bold">About Me</p>
+                 </div>
+                <p> I am a talented, ambitious and hardworking individual, with broad skills and experience in game and  
+                  VR development projects. Furthermore, I am adept at handling multiple tasks on a daily basis competently and 
+                  at working well under pressure.
+                  One of my key strength is communication; building strong relationships with people in order to deliver the best 
+                  results.
+                </p>
+            </div>
+            <div class="resume_item resume_work">
+                <div class="title">
+                   <p class="bold">Work Experience</p>
+                 </div>
+                <ul>
+                    <li>
+                        <div class="date">October 2021 - June 2023</div> 
+                        <div class="info">
+                             <p class="semi-bold">Recordbay GMBH</p> 
+                          <p>Worked as a Unity developer in multiple projects ranging from windows app to ios, android and 
+                            webgl applications. I also had to use Windows Forms and Unreal Engine to create some applications
+                            that run along with the Unity application. During my tenure I had to recreate an ios app that was
+                            developed some years back to support the latest ios versions even without having much exposure
+                            to ios development. I setup an application from scratch using SwiftUI as the UI framework. Then I 
+                            also had to work and support on projects using playcanvas during my tenure. 
+                          </p>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="date">January 2021 - September 2021</div>
+                      <div class="info">
+                             <p class="semi-bold">Karis Digital</p> 
+                          <p>A startup funded by the Berlin Senate, I was involved in the creation of Unity based Webgl 
+                            application that aimed at creating an interactive solution to support the people diagnosed with 
+                            ADHD and other hyperactivity disorders.
+                          </p>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="date">April 2020 - October 2020</div>
+                      <div class="info">
+                             <p class="semi-bold">iXtenda GMBH</p> 
+                          <p>Working with Unity, Blender (Rigging) and Pixyz (Writing python scripts to automate the 3D 
+                            model cleanup and tessellation)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume_item resume_education">
+              <div class="title">
+                   <p class="bold">Education</p>
+                 </div>
+              <ul>
+                    <li>
+                        <div class="date">2016 - 2020</div> 
+                        <div class="info">
+                             <p class="semi-bold">Computer Science - (Technische Universität Berlin)</p> 
+                          <p>Courses related to Human Computer Interaction, Multimodal Interaction, Game and VR
+                            development (as Thesis and Student Project).
+                          </p>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="date">2008 - 2012</div>
+                      <div class="info">
+                             <p class="semi-bold">Anna University</p> 
+                          <p>Bachelors Degree in computer science and Information Technology</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume_item resume_hobby">
+              <div class="title">
+                   <p class="bold">Hobby</p>
+                 </div>
+               <ul>
+                 <li><i class="fas fa-book"></i></li>
+                 <li><i class="fas fa-gamepad"></i></li>
+                 <li><i class="fas fa-music"></i></li>
+                 <li><i class="fab fa-pagelines"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+</html>

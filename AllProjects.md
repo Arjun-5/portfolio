@@ -69,6 +69,18 @@ nav-menu: true
           </div>
           </a>
         </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/pallanguzhi.html">
+          <div class="img-box" title="Pallanguzhi Mobile Game">
+	          <img src="{{ site.baseurl }}/assets/images/projectImages/LTS.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Lost Thought Studios</h2>
+            <h3>Android Mobile Game</h3>
+            <p>Mobile game (android based) created for an indie studio of mine (not yet registered). The game is an ancient South Indian mancala based game that is widely played by kids and elders</p>
+          </div>
+          </a>
+        </div>
 </div>
 </section>
 </div>

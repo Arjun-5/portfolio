@@ -1,0 +1,150 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">After gradution from TU Berlin I joined a Berlin based healthcare startup, <a 
+            href="https://www.karisdigital.com" target="_blank">Karis Digital</a>. The company comprised of three members (including 
+            me) and I was the only programmer that was working on the prototype so that we could present our idea to potential 
+            investors to provide additional funding once the current funding from the Berlin senate runs out. My task was to create
+            a mental puzzle game and a painting application with a multiplayer community setup. The puzzle game can be accessed from 
+            <a href="https://artmonia-karisdigital.github.io/ArtTherapy-WebVR/">this link</a>. The painting application can be accessed
+            from <a href="https://karis-webgame.web.app">this link</a>.
+            </p>
+      </header>
+
+      <header class = "major">
+        <h1>Images from the Mobile Game</h1>
+      
+        <div class="munsterHackSlide">
+          <ul id="pallanguzhiSlider">
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_1.png">
+                  <img src="{{ site.baseurl }}/assets/images/Mg/MG_1.png" style="height: 100%; width: 50%;" />
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_2.png">
+                  <img src="{{ site.baseurl }}/assets/images/Mg/MG_2.png" style="height: 100%; width: 50%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_3.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_3.png" style="height: 100%; width: 50%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_4.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_4.png" style="height: 100%; width: 50%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_5.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_5.png" style="height: 100%; width: 50%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_6.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_6.png" style="height: 100%; width: 50%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_7.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_7.png" style="height: 100%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_8.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_8.png" style="height: 100%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_9.png">
+                <img src="{{ site.baseurl }}/assets/images/Mg/MG_9.png" style="height: 100%; width: 100%;"/>
+              </li>
+          </ul>
+      </div>
+      </header>
+
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> Unity Game Engine, Google Play Console, Android Studio and Bluestacks</p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <ul class="textColor customList" style="color: #F2AA4C;">
+          <li>
+            <a href = "https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Development using Unity Engine and debugging on Android Studio and Bluestacks. 
+          </li>
+        </ul>
+      </header>
+
+      <header class ="major">
+        <h1>Project Description</h1>
+        <p class="textColor">Pallankuzhi is played on a rectangular board with 2 rows and 7 columns. There are a total of 14 
+          cups and 146 counters. For the counters in the game, seeds, shells, small stones can be used. The game ends when one 
+          of the players captures all the shells/holes of the opponent. On his turn a player lifts the seeds from any of his 
+          holes and, going counter-clockwise, distributes one seed into the following holes. After a player has dropped his 
+          last seed, he takes the seeds from the next hole and distributes accordingly. If the last seed falls into a hole that 
+          is empty, then the seeds in the hole following the empty hole are captured by the player and placed into his store.
+          <br><br>
+          When the first round is over players take the coins that are stored in their counters and fill as many of their holes 
+          as possible with the coins/counters. 5 coins are required for to have the each holes filled, The winner will have a 
+          surplus of counters which are kept in his store. The loser of the first round will be unable to fill all of his holes.
+          These unfilled holes are marked as "rubbish holes." In the next round play continues as before, but without the 
+          rubbish holes being included.
+          <br><br>
+          During the game if a player has enough counters to fill any of his rubbish holes back up their status is removed and
+          they are again used during play. The game is over when a player is unable to fill any cups with 5 counters at the 
+          end of a round.
+        </p>
+        <br>
+        <iframe src="https://drive.google.com/file/d/17SOnsndMPkKr47C9h6dzLQ7ndHiMy5bO/preview" width="1080" 
+        height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+      </header>
+
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#pallanguzhiSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>
