@@ -1,0 +1,147 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">
+            Goal: To study, understand and compare the results on the impact, various environment noises (binaural and others) 
+            had on user experience and presence within the virtual space.
+            <br><br>
+            • Developed a Unity based virtual reality application where the Users had to execute 12 set of conditions that 
+            differ not just in the noise placed in the environment and its intensity but also the level of interaction one 
+            has in the virtual space.
+            <br><br>
+            • Post completion of each tests, users had to record the results by completing the following set of 
+            questionnaires: Nasa Task Load Index, IPQ Presence Questionnaire, PANAS Test and Self Assessment Manikin.
+          </p>
+      </header>
+
+      <header class = "major">
+        <h1>Images from the VR Application</h1>
+      
+        <div class="munsterHackSlide">
+          <ul id="thesisImageSlider">
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_1.png">
+                  <img src="{{ site.baseurl }}/assets/images/thesis/th_1.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_2.png">
+                  <img src="{{ site.baseurl }}/assets/images/thesis/th_2.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_3.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_3.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_4.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_4.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_5.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_5.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_6.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_6.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_7.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_7.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_8.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_8.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/thesis/th_9.png">
+                <img src="{{ site.baseurl }}/assets/images/thesis/th_9.png" style="height: 90%; width: 100%;"/>
+              </li>
+          </ul>
+      </div>
+      </header>
+
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> 
+          3D Modeling & Rigging & UV Correction : Autodesk Maya & Blender <br>
+          Game Development : Unity Engine<br>
+          Most Assets : Reused from SketchFab<br>
+          Device : Oculus Quest
+          <br>
+        </p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <ul class="textColor customList" style="color: #F2AA4C;">
+          <li>
+            <a href = "https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Development using Unity Engine and debugging on Oculus Quest. 
+          </li>
+        </ul>
+      </header>
+
+      <header class ="major">
+        <h1>Research Idea</h1>
+        <p class="textColor">To study how various environmental noises (binaural and non binaural noises) affect one’s 
+          level of immersion or decision making within virtual reality. To measure the system usability and acceptability of 
+          the VR device. To understand if various kinds of environment noises affect the level of immersion/presence or 
+          decision making in VR. Also, did the sounds contribute to the level of realism within the VR world.
+        </p>
+        <br>
+        <iframe src="https://drive.google.com/file/d/1TegJAzjs8JNXcytJL2v2yUXox6Hx3O_k/preview" width="1080" 
+        height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+      </header>
+
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#thesisImageSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>

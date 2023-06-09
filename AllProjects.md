@@ -81,6 +81,18 @@ nav-menu: true
           </div>
           </a>
         </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/masterThesis.html">
+          <div class="img-box" title="Master Thesis - VR Application">
+	          <img src="{{ site.baseurl }}/assets/images/thesis.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Master Thesis</h2>
+            <h3>Virtual Reality Application</h3>
+            <p>To study how various environmental noises (binaural and non binaural noises) affect one’s level of immersion or decision making within virtual reality.</p>
+          </div>
+          </a>
+        </div>
 </div>
 </section>
 </div>
