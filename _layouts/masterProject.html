@@ -1,0 +1,159 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">
+            Goal: The main aim of the proposed project is to design and develop a virtual reality scene representing numerical 
+            streams of data in creative nonnumerical way with possibilities of interaction with data streams.
+            <br><br>
+            
+            <i class="fa fa-newspaper-o" style="font-size:36px"> : </i> <a href="https://link.springer.com/chapter/10.1007/978-3-030-78642-7_36">
+              Influence of Visualisation Design of Data Streams on User Experience in Virtual Reality
+            </a>
+          </p>
+      </header>
+
+      <header class = "major">
+        <h1>Images from the VR Application</h1>
+      
+        <div class="munsterHackSlide">
+          <ul id="projectImageSlider">
+              <li data-thumb="{{ site.baseurl }}/assets/images/project/pr_1.png">
+                  <img src="{{ site.baseurl }}/assets/images/project/pr_1.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/project/pr_2.png">
+                  <img src="{{ site.baseurl }}/assets/images/project/pr_2.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/project/pr_3.png">
+                <img src="{{ site.baseurl }}/assets/images/project/pr_3.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/project/pr_4.png">
+                <img src="{{ site.baseurl }}/assets/images/project/pr_4.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/project/pr_5.png">
+                <img src="{{ site.baseurl }}/assets/images/project/pr_5.png" style="height: 90%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/project/pr_6.png">
+                <img src="{{ site.baseurl }}/assets/images/project/pr_6.png" style="height: 90%; width: 100%;"/>
+              </li>
+          </ul>
+      </div>
+      </header>
+
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> 
+          3D Modeling & Rigging & UV Correction : Autodesk Maya & Blender <br>
+          Game Development : Unity Engine<br>
+          Most Assets : Reused from SketchFab<br>
+          Device : Oculus Quest
+          <br>
+        </p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <ul class="textColor customList" style="color: #F2AA4C;">
+          <li>
+            <a href = "https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Development using Unity Engine and debugging on Oculus Quest. 
+          </li>
+        </ul>
+      </header>
+
+      <header class ="major">
+        <h1>Research Idea</h1>
+        <p class="textColor">
+          These are the four different conditions and we have to find ways to represent data in the environment.
+          <br><br>
+          <h3>Nature and Creative</h3>
+          <p class="textColor">The environment is nature and we have to find some creative ways to represent data in it.</p>
+          <br>
+          <iframe src="https://drive.google.com/file/d/1XAQ-NWGj5t21N-KqtivWGaqTVYAtEV2Z/preview" width="1080" 
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+          <br>
+          <h3>Nature and Numerical</h3>
+          <p class="textColor">The environment is nature and we have to find some creative ways to represent data in 
+            numerical format.</p>
+          <br>
+          <iframe src="https://drive.google.com/file/d/1ipP6FzXI5g1wB1RZ-PE8TyZ_j6Po9a5h/preview" width="1080" 
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+          <br>
+          <h3>Office and Creative</h3>
+          <p class="textColor">The environment is an office space and we have to find some creative ways to represent 
+            data in it.</p>
+          <br>
+          <iframe src="https://drive.google.com/file/d/1fWrLF1A9SAkpnajY-S0p3xW8wRLk98gL/preview" width="1080" 
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+          <br>
+          <h3>Office and Numerical</h3>
+          <p class="textColor">The environment is an office space and we have to find some ways to represent data in 
+            numerical format.</p>
+          <br>
+          <iframe src="https://drive.google.com/file/d/19D24OF_wgiMQ0KerxFacDHyvXsGbCs2p/preview" width="1080" 
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        </p>
+        <br>
+      </header>
+
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#projectImageSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>

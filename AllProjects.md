@@ -93,6 +93,18 @@ nav-menu: true
           </div>
           </a>
         </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/masterProject.html">
+          <div class="img-box" title="Master Project - VR Application">
+	          <img src="{{ site.baseurl }}/assets/images/mp.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Master Thesis</h2>
+            <h3>Virtual Reality Application</h3>
+            <p>Design and develop a virtual reality scene representing numerical streams of data in creative nonnumerical way with possibilities of interaction with data streams.</p>
+          </div>
+          </a>
+        </div>
 </div>
 </section>
 </div>
