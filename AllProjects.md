@@ -105,6 +105,18 @@ nav-menu: true
           </div>
           </a>
         </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/multimodalInteraction.html">
+          <div class="img-box" title="Multimodal Interaction - Desktop Game">
+	          <img src="{{ site.baseurl }}/assets/images/mm.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Multimodal Interaction Project</h2>
+            <h3>Desktop Game</h3>
+            <p>Create a mini game that runs on a desktop environment and takes input via different types of modality. Modalities such as speech, physical input and so on were used.</p>
+          </div>
+          </a>
+        </div>
 </div>
 </section>
 </div>

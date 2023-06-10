@@ -1,0 +1,129 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2K3K52ESHW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2K3K52ESHW');
+</script>
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">
+            Goal: Create a mini game that uses different types of modality. Assets and some of the mechanics in the game 
+            were reused from the Unity Standard Assets but other in game programming elements that explains the use of modality 
+            were developed by me(C# scripts).
+          </p>
+      </header>
+
+      <header class = "major">
+        <h1>Images from the Project</h1>
+      
+        <div class="munsterHackSlide">
+          <ul id="mmImageSlider">
+              <li data-thumb="{{ site.baseurl }}/assets/images/mm/mm_1.png">
+                  <img src="{{ site.baseurl }}/assets/images/mm/mm_1.png" style="height: 100%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/mm/mm_2.png">
+                  <img src="{{ site.baseurl }}/assets/images/mm/mm_2.png" style="height: 100%; width: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/mm/mm_3.png">
+                <img src="{{ site.baseurl }}/assets/images/mm/mm_3.png" style="height: 100%; width: 100%;"/>
+              </li>
+          </ul>
+      </div>
+      </header>
+
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> 
+          3D Modeling & Rigging & UV Correction : Autodesk Maya & Blender <br>
+          Game Development : Unity Engine<br>
+          Most Assets : Reused from SketchFab<br>
+          <br>
+        </p>
+      </header>
+
+      <header class ="major">
+        <h1>Team Information</h1>
+        <ul class="textColor customList" style="color: #F2AA4C;">
+          <li>
+            <a href = "https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Development using Unity Engine. 
+          </li>
+        </ul>
+      </header>
+
+      <header class ="major">
+        <h1>Project Idea</h1>
+        <p class="textColor">Main task of the project is to develop our own multimodal game by using Unity game engine. Goal 
+          behind this task is to get us more familiar with the concepts of multi modality in Human Computer Interaction.
+        </p>
+        <br>
+        <iframe src="https://drive.google.com/file/d/1jOKf0bUhnejxKtw5vSXxkua-5UB1_81j/preview" width="1080" 
+        height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+      </header>
+
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#mmImageSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>
