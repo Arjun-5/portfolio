@@ -117,6 +117,43 @@ nav-menu: true
           </div>
           </a>
         </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/3DPrinting.html">
+          <div class="img-box" title="3D Modelling and Printing" >
+	          <img src="{{ site.baseurl }}/assets/images/3DPrinting.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Summer University Program</h2>
+            <h3>3D Printing</h3>
+            <p>A summer program that I participated during my study in Technishe Universty Berlin where I modelled these objects
+            using Maya and printed them at the 3D Labor TU Berlin.</p>
+          </div>
+          </a>
+        </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/3DSculpting.html">
+          <div class="img-box" title="3D Modelling and Sculpting" >
+	          <img src="{{ site.baseurl }}/assets/images/3DSculpt.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Personal Project</h2>
+            <h3>3D Sculpting</h3>
+            <p>Some 3D characters that I modelled using Autodesk Maya and Sculpted using Autodesk Mudbox.</p>
+          </div>
+          </a>
+        </div>
+        <div class="blitzbox">
+          <a href="{{ site.baseurl }}/3DVisualization.html">
+          <div class="img-box" title="3D Visualization" >
+	          <img src="{{ site.baseurl }}/assets/images/3DVisual.png" alt="">
+          </div>
+          <div class="contentPosition">
+            <h2>Personal Project</h2>
+            <h3>3D Visualization</h3>
+            <p>Modelled and animated objects using Autodesk Maya and then rendered the video sequence using Unreal Engine.</p>
+          </div>
+          </a>
+        </div>
 </div>
 </section>
 </div>

@@ -1,0 +1,93 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">
+            Some 3D characters that I modelled using Autodesk Maya and Sculpted using Autodesk Mudbox.
+          </p>
+      </header>
+
+      <header class = "major">
+        <h1>Images of the sculpted 3D models</h1>
+      
+        <div class="munsterHackSlide">
+          <ul id="3DPrintSlider">
+              <li data-thumb="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_1.gif">
+                  <img src="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_1.gif" style="height: 100%;"/>
+              </li>
+              <li data-thumb="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_2.png">
+                  <img src="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_2.png" style="height: 100%;"/>
+              </li>
+          </ul>
+      </div>
+      </header>
+
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> 
+          3D Modeling : Autodesk Maya <br>
+          3D Sculpting : Autodesk Mudbox <br> 
+          Drawing Tablet : Wacom
+          <br>
+        </p>
+      </header>
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#3DPrintSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>

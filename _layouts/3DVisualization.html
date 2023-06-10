@@ -1,0 +1,79 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+<style>
+.textColor{
+  color: #F2AA4C;
+}
+.customList {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.demo {
+    width:80%;
+}
+.demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+</style>
+<body>    
+  <section>
+    <div class="inner">
+      <header class="major">
+          <h1>{{ page.title }}</h1>
+          <p class="textColor">Modeled, UV'ed, Rigged and Animated (also particle effects) a rocket flying scene using 
+            Autodesk Maya. <br><br>
+            <iframe src="https://drive.google.com/file/d/1B0h3xOWvrTI1He4Fh9GfAOYxNqUrojjr/preview" width="1080" 
+            height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+            <br>>
+            Designed a simple room setup and created a cinematic sequence in Unreal Engine<br><br>
+            <iframe src="https://drive.google.com/file/d/1iwAzYa8u3yUSD7YpG2zZ6LR84ovYafay/preview" width="1080" 
+            height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+            </p>
+      </header>
+
+      <header class = "major">
+        <h1>Tools & Softwares Used</h1>
+        <p class="textColor"> Autodesk Maya and Unreal Game Engine</p>
+      </header>
+
+    </div>
+  </section>
+
+{% include footer.html %}
+
+</body>
+<script>
+$('#vrHackathonLightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9,
+    speed: 400, 
+    auto: true,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000
+});
+  </script>
+</html>
