@@ -17,6 +17,9 @@ phone: (XXX) XXX-XXXX
 tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
 
+# Google Analytics
+google_analytics: G-2K3K52ESHW
+
 # social settings
 500px_url:
 facebook_url: #www.facebook.com
