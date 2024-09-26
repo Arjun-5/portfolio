@@ -9,9 +9,12 @@
 #bgImageLand {
 	@include vendor('align-items', 'center');
 	//@include vendor('background-image', 'url("../images/66.jpg")');
-	@include vendor('background-image', 'url("../images/animBackground.gif")');
+	//@include vendor('background-image', 'url("../images/animBackground.gif")');
 	@include vendor('display', 'flex');
 	@include padding(4em, 0, (2em, 0, 0, 0));
+	background-color: rgba(26, 27, 38,0.75);
+	@include vendor('background-image', 'url("../images/Gradient.png")');
+	background-blend-mode: overlay;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

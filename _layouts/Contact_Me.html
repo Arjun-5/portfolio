@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html>
-
-    {% include head.html %}
-    {% include header.html %}
-
-
+{% include head.html %}
+{% include header.html %}
 <style>
+    .iframebox {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 1%;
+        /* 16:9 Aspect Ratio */
+    }
 
-.iframebox {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 1%; /* 16:9 Aspect Ratio */
-}
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+    #receiver {
+        margin-top: 300px;
+    }
 
-#receiver {
- margin-top: 300px;
-}
+    @font-face {
+        font-family: 'Cooper Black';
+        src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+    @font-face {
+        font-family: 'Perpetua';
+        src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
 
-    </style>
-    <body>
-        <section id="bgImagecontact">
-            <div class="inner">
-                <span class="image">
-                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
-                </span>
-                <header class="major">
+<body>
+    <section id="bgImagecontact">
+        <div class="inner">
+            <span class="image">
+                <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+            </span>
+            <header class="major">
+                <h1 style="color: #cfc9c2; font-family: 'Cooper Black';">{{ page.title }}</h1>
+            </header>
+        </div>
+    </section>
 
-                    <h1>{{ page.title }}</h1>
-
-                </header>
-            
-            </div>
-            
-        </section>
-        
-        <section id="bgImagecontact" class="major">
-            <div class="inner">
-                <span class="image">
-                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
-                </span>
-               
-                {{ content }}
-                <br> <br> <br> <br>
-            </div>           
-        </section>
-       
-        {% include footer.html %}
-
-    
+    <section id="bgImagecontact" class="major">
+        <div class="inner">
+            <span class="image">
+                <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+            </span>
+            {{ content }}
+            <br> <br> <br> <br>
+        </div>
+    </section>
+    {% include footer.html %}
 </body>
-
 <script>
-
-function urlChange() {
-    alert("Message Sent");
-}
-
+    function urlChange() {
+        alert("Message Sent");
+    }
 </script>
-
 </html>

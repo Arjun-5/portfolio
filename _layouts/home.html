@@ -1,258 +1,304 @@
 <html>
 
 {% include head.html %}
+{% include header.html %}
 <head>
-<style> 
+    <style>
+        @font-face {
+            font-family: 'Cooper Black';
+            src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-.card{
-    background-color:rgba(43, 5, 68, 0);
-    border-radius: 15%;
-}
-.card-img-top{
-    border-radius: 5%;
-}
-.lSAction > a {
-    background-image: url("{{ site.baseurl }}/assets/images/controls.png");
-    border-bottom: none;
-}
+        @font-face {
+            font-family: 'Perpetua';
+            src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-.landbox1{
 
-    background:url("{{ site.baseurl }}/assets/images/More_Info.png");
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-.landbox2{
+        .card {
+            background-color: rgba(43, 5, 68, 0);
+            border-radius: 15%;
+        }
 
-    background:url("{{ site.baseurl }}/assets/images/WhoWeAre.png");
-    background-size: cover;
-    background-repeat:no-repeat;
-    
-}
-/*.blitzbox1:hover, .blitzbox2:hover{
-	width: 420px;
-	height: 220px;
-}*/
+        .card-img-top {
+            border-radius: 5%;
+        }
 
-.glow-on-hover {
-    width: auto;
-    height: auto;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+        .lSAction>a {
+            background-image: url("{{ site.baseurl }}/assets/images/controls.png");
+            border-bottom: none;
+        }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
+        .glow-on-hover {
+            width: 180;
+            height: auto;
+            border: none;
+            outline: none;
+            color: #cfc9c2;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
 
-.glow-on-hover:active {
-    color: #000
-}
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
 
-.glow-on-hover:active:after {
-    background: transparent;
-}
+        .glow-on-hover:active {
+            color: #000
+        }
 
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
 
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
 
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-</style>
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .headerStyle {
+            color: #cfc9c2;
+            font-family: 'Cooper Black', serif;
+        }
+
+        .gradient {
+            /* For older Webkit browsers */
+            background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#414868), to(#1a1b26));
+
+            /* For modern Webkit browsers (Chrome, Safari) */
+            background: -webkit-linear-gradient(left, #414868, #24283b, #1a1b26);
+
+            /* For Firefox */
+            background: -moz-linear-gradient(left, #414868, #24283b, #1a1b26);
+
+            /* For Internet Explorer */
+            background: -ms-linear-gradient(left, #414868, #24283b, #1a1b26);
+
+            /* For Opera */
+            background: -o-linear-gradient(left, #414868, #24283b, #1a1b26);
+
+            /* Standard syntax */
+            background: linear-gradient(to right, #414868, #24283b, #1a1b26);
+        }
+    </style>
 
 
 </head>
 
 <body>
-
-    {% include header.html %}
-
     <!-- Banner -->
     <section id="bgImage" class="major">
         <div class="inner">
             <header class="major">
-                <h1>{{ page.landing-title }}</h1>
+                <h1 class="headerStyle">{{ page.landing-title }}</h1>
             </header>
             <div class="content">
-                <a style="text-align: center;" href="{{ site.baseurl }}/AllProjects.html" class="glow-on-hover" type="button">All Projects</a>
-                <ul class="actions">
-                    <li><a style="text-align: center;" href="{{ site.baseurl }}/Contact_Me.html" class="glow-on-hover" type="button">Reach Out</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a style="text-align: center;" href="{{ site.baseurl }}/resume.html" class="glow-on-hover" type="button">Resume</a></li>
-                </ul>
+                <a style="text-align: center; font-family: 'Perpetua';font-size: 24;"
+                    href="{{ site.baseurl }}/AllProjects.html" class="glow-on-hover" type="button">All Projects</a>
+                <a style="text-align: center;font-family: 'Perpetua';font-size: 24;"
+                    href="{{ site.baseurl }}/Contact_Me.html" class="glow-on-hover" type="button">Reach Out</a>
+                <a style="text-align: center; font-family: 'Perpetua';font-size: 24;"
+                    href="{{ site.baseurl }}/resume.html" class="glow-on-hover" type="button">Resume</a>
             </div>
         </div>
     </section>
 
     <!-- Main -->
-    
 
-        <!-- One -->
-        <!--{% include tiles.html %} -->
 
-        
-        <!-- Div Inner is required for proper alignment of contents-->
-        <section id="bgImageLand" class="major">
-            <div class="inner">
-                <h2 class="spacingh2">RECENT PROJECTS</h2>
-                <div class="container-fluid">
-                    <!--slider------------------->
+    <!-- One -->
+    <!--{% include tiles.html %} -->
+
+
+    <!-- Div Inner is required for proper alignment of contents-->
+    <section id="bgImageLand" class="major">
+        <div class="inner">
+            <h2 class="spacingh2 headerStyle">RECENT PROJECTS</h2>
+            <div class="container-fluid">
+                <!--slider------------------->
                 <ul id="homepageSlider" class="cs-hidden">
                     <!--1------------------------------>
-                <li class="item-a">
-                  <!--slider-box-->
-                  <a href="{{ site.baseurl }}/weareVR.html">
-                    <div class="containerBox">
-                    <!-- <p class="marvel">MARVEL</p> -->
-                    <!--model-->
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/weAreVR.png" class="containerModel">
-                    <!--details-->
-                    <div class="containerDetails">
-                    <!--logo-character-->
-                    <img src="{{ site.baseurl }}/assets/images/logo/wervrlogo.png" class="containerLogo">
-                    <!--character-details-->
-                    <!--<h4>Fight the Landlord</h4>-->
-                    <p> A Virtual Reality app, helicopter cockpit created using Unreal Engine 5 for a hackathon held
-                        in Berlin 2022.
-                    </p>
-                    </div>
-                    
-                    </div></a>
-                </li>
+                    <li class="item-a">
+                        <!--slider-box-->
+                        <a href="{{ site.baseurl }}/weareVR.html">
+                            <div class="containerBox">
+                                <!-- <p class="marvel">MARVEL</p> -->
+                                <!--model-->
+                                <img src="{{ site.baseurl }}/assets/images/projectImages/weAreVR.png"
+                                    class="containerModel">
+                                <!--details-->
+                                <div class="containerDetails">
+                                    <!--logo-character-->
+                                    <img src="{{ site.baseurl }}/assets/images/logo/wervrlogo.png"
+                                        class="containerLogo">
+                                    <!--character-details-->
+                                    <!--<h4>Fight the Landlord</h4>-->
+                                    <p> VR app, helicopter cockpit created using Unreal Engine 5 for a
+                                        hackathon held in Berlin 2022.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
                     <!--2------------------------------>
-                <li class="item-a">
-                  <!--slider-box-->
-                  <a href="{{ site.baseurl }}/game2.html">
-                    <div class="containerBox">
-                    <!-- <p class="marvel">MARVEL</p> -->
-                    <!--model-->
-                    <img src="{{ site.baseurl }}/assets/images/logo/muensterhack.png" class="containerModel">
-                    <!--details-->
-                    <div class="containerDetails">
-                    <!--logo-character-->
-                    <img src="{{ site.baseurl }}/assets/images/logo/muensterhack.png" class="containerLogo">
-                    <!--character-details-->
-                    
-                    <p>Develop ideas and prototypes together to make munster city even more liveable.</p>
-                    </div>
-                    
-                    </div></a>
-                </li>
-                <li class="item-a">
-                    <a href="{{ site.baseurl }}/game3.html">
-                    <div class="containerBox">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/celxHuobi.png" class="containerModel">
-                   
-                    <div class="containerDetails">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/celxHuobi.png" class="containerLogo" >
-                   
-                    <p>A VR application that allows users to access various events and the NFT's associated
-                        with it and place a bid on any as they please.</p>
-                    </div>
-                    
-                    </div></a>
-                </li>
-                     
-                <li class="item-a">
-                    <a href="{{ site.baseurl }}/esmtApp.html">
-                    <div class="containerBox">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/esmt_App.png" class="containerModel">
-                   
-                    <div class="containerDetails">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/esmt_App.png" class="containerLogo" >
-                   
-                    <p>Supported Karo Labs in one of their app that was developed for ESMT Berlin. Mostly 
-                        replacing the exisitng CMS setup that can be managed easily.
-                    </p>
-                    </div>
-                    
-                    </div></a>
-                </li>
+                    <li class="item-a">
+                        <!--slider-box-->
+                        <a href="{{ site.baseurl }}/game2.html">
+                            <div class="containerBox">
+                                <!-- <p class="marvel">MARVEL</p> -->
+                                <!--model-->
+                                <img src="{{ site.baseurl }}/assets/images/logo/muensterhack.png"
+                                    class="containerModel">
+                                <!--details-->
+                                <div class="containerDetails">
+                                    <!--logo-character-->
+                                    <img src="{{ site.baseurl }}/assets/images/logo/muensterhack.png"
+                                        class="containerLogo">
+                                    <!--character-details-->
 
-                <li class="item-a">
-                    <a href="{{ site.baseurl }}/esmtApp.html">
-                    <div class="containerBox">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/karis.png" class="containerModel">
-                   
-                    <div class="containerDetails">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/karis.png" class="containerLogo" >
-                   
-                    <p>Created mental puzzle game and multiplayer painting application using Unity webgl.</p>
-                    </div>
-                    
-                    </div></a>
-                </li>
+                                    <p>Develop ideas and prototypes together to make munster city even more liveable.
+                                    </p>
+                                </div>
 
-                <li class="item-a">
-                    <a href="{{ site.baseurl }}/pallanguzhi.html">
-                    <div class="containerBox">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/LTS.png" class="containerModel">
-                   
-                    <div class="containerDetails">
-                   
-                    <img src="{{ site.baseurl }}/assets/images/projectImages/LTS.png" class="containerLogo" >
-                   
-                    <p>An Android Mobile Game that was created for my Indie Game Studio - Lost Thought Studios.</p>
-                    </div>
-                    
-                    </div></a>
-                </li>
-                
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-a">
+                        <a href="{{ site.baseurl }}/game3.html">
+                            <div class="containerBox">
+
+                                <img src="{{ site.baseurl }}/assets/images/projectImages/celxHuobi.png"
+                                    class="containerModel">
+
+                                <div class="containerDetails">
+
+                                    <img src="{{ site.baseurl }}/assets/images/projectImages/celxHuobi.png"
+                                        class="containerLogo">
+
+                                    <p>A VR application enabling users to explore events, view associated NFTs, and
+                                        place bids seamlessly.</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item-a">
+                        <a href="{{ site.baseurl }}/esmtApp.html">
+                            <div class="containerBox">
+
+                                <img src="{{ site.baseurl }}/assets/images/projectImages/esmt_App.png"
+                                    class="containerModel">
+
+                                <div class="containerDetails">
+
+                                    <img src="{{ site.baseurl }}/assets/images/projectImages/esmt_App.png"
+                                        class="containerLogo">
+
+                                    <p>Supported in updating the ESMT Berlin app by replacing the CMS with a
+                                        more cost-effective, user-friendly solution.</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item-a">
+                        <a href="{{ site.baseurl }}/karisdigital.html">
+                            <div class="containerBox">
+
+                                <img src="{{ site.baseurl }}/assets/images/karis.png" class="containerModel">
+
+                                <div class="containerDetails">
+
+                                    <img src="{{ site.baseurl }}/assets/images/karis.png" class="containerLogo">
+
+                                    <p>Created mental puzzle game and multiplayer painting application using Unity
+                                        webgl.</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item-a">
+                        <a href="{{ site.baseurl }}/pallanguzhi.html">
+                            <div class="containerBox">
+
+                                <img src="{{ site.baseurl }}/assets/images/projectImages/LTS.png"
+                                    class="containerModel">
+
+                                <div class="containerDetails">
+
+                                    <img src="{{ site.baseurl }}/assets/images/projectImages/LTS.png"
+                                        class="containerLogo">
+
+                                    <p>An Android Mobile Game that was created for my Indie Game Studio - Lost Thought
+                                        Studios.</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
             <br><br><br><br>
             <br>
-            </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- Two -->
-        <!-- <section id="bgImageLand" class="major">
+    <!-- Two -->
+    <!-- <section id="bgImageLand" class="major">
             <div class="inner">
                 
                 
@@ -283,7 +329,7 @@
 
             </div>
         </section> -->
-        <br>
+    <br>
     {% include footer.html %}
 </body>
 
@@ -293,18 +339,20 @@
 <script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
 <script type="text/javascript">
     // JavaScript Document
-    $(document).ready(function() {	
+    $(document).ready(function () {
         $('#homepageSlider').lightSlider({
-            autoWidth:true,
+            autoWidth: true,
             speed: 1000,
-            auto:true,
-            loop:true,
-            slideMargin:100,
+            pause: 4000,
+            auto: true,
+            loop: true,
+            slideMargin: 150,
             pauseOnHover: true,
-            onSliderLoad: function() {
+            onSliderLoad: function () {
                 $('#homepageSlider').removeClass('cs-hidden');
-            } 
-        });  
-      });
+            }
+        });
+    });
 </script>
+
 </html>

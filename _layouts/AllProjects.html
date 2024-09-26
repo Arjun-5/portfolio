@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<!--
-    Forty by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  -->
 <html>
+{% include head.html %}
+{% include header.html %}
+<style>
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
-  {% include head.html %}
-  {% include header.html %} 
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
-  <body>
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
 
-    
-    <section>
-      <div class="inner">
-          <header class="major">
-              <h1>{{ page.title }}</h1>
-              <p style="color: #F2AA4C;">Here's the collection of projects(Solo and group) that I have worked so far in the last few years. This is not a
-                complete list but just a few that I thought would be nice to present here.                
-              </p>
-          </header>
-      </div>
-   </section>
+  .infoContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+</style>
 
-
-   
-                 
+<body>
+  <section class="background">
+    <div class="inner">
+      <header class="major">
+        <h1 style="color: #cfc9c2; font-family: 'Cooper Black';">{{ page.title }}</h1>
+        <p style="color: #F2AA4C; font-family: 'Perpetua';">Here's the collection of projects(Solo and group) that I
+          have worked so far in the last few years. This is not a
+          complete list but just a few that I thought would be nice to present here.
+        </p>
+      </header>
+    </div>
+  </section>
+  <div class="background">
+    <div class="infoContainer">
       {{ content }}
-     
-
-{% include footer.html %}
-
-  </body>
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
 
 </html>

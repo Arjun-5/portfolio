@@ -27,9 +27,10 @@
 
 				  &:after {
 					    content: '';
-					    background-color: _palette(fg-bold);
+					    //background-color: _palette(fg-bold);
+						background-color: #9ece6a;
 					    display: block;
-					    height: 2px;
+					    height: 3px;
 					    margin: 0.325em 0 0.5em 0;
 					    width: 100%; //Original Value : 100% for Banner Line Width
 				  }

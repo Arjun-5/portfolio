@@ -8,7 +8,9 @@
 
 #bgImage {
 	@include vendor('align-items', 'center');
-	@include vendor('background-image', 'url("../images/animBackground.gif")');
+	background-color: rgba(26, 27, 38,0.75);
+	@include vendor('background-image', 'url("../images/Gradient.png")');
+	background-blend-mode: overlay;
 	@include vendor('display', 'flex');
 	@include padding(4em, 0, (2em, 0, 0, 0));
 	background-attachment: fixed;
@@ -76,7 +78,6 @@
 			@include vendor('display', 'flex');
 			@include vendor('align-items', 'center');
 			margin: 0 0 _size(element-margin) 0;
-
 			> * {
 				margin-left: 1.5em;
 				margin-bottom: 0;

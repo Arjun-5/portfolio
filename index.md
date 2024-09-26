@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Arjun Rahul Portfolio'
+landing-title: 'Rahul Thangaraj Portfolio'
 description: null
 image: null
 author: null
