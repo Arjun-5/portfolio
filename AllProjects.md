@@ -9,7 +9,7 @@ nav-menu: true
     <section>
       <div class="blitzcontainer">
          <div class="blitzbox">
-          <a href="{{ site.baseurl }}/weareVR.html">
+          <a href="{{ site.baseurl }}/AdminDashboard.html">
             <div class="img-box" title="Admin Dashboard">
               <img src="{{ site.baseurl }}/assets/images/projectImages/Icon_Admin_Panel.png" alt="">
             </div>
@@ -21,9 +21,9 @@ nav-menu: true
           </a>
         </div>
          <div class="blitzbox">
-          <a href="{{ site.baseurl }}/weareVR.html">
+          <a href="{{ site.baseurl }}/DIY_Application.html">
             <div class="img-box" title="DIY Application">
-              <img src="{{ site.baseurl }}/assets/images/projectImages/BreakpointOne.svg" alt="">
+              <img src="{{ site.baseurl }}/assets/images/projectImages/DIY_Project.png" alt="">
             </div>
             <div class="contentPosition">
               <h2>BreakpointOne Gmbh</h2>
@@ -33,9 +33,9 @@ nav-menu: true
           </a>
         </div>
         <div class="blitzbox">
-          <a href="{{ site.baseurl }}/weareVR.html">
+          <a href="{{ site.baseurl }}/KeepCoolAdaptiveVR.html">
             <div class="img-box" title="Keep Cool VR Application">
-              <img src="{{ site.baseurl }}/assets/images/projectImages/BreakpointOne.svg" alt="">
+              <img src="{{ site.baseurl }}/assets/images/projectImages/KP_VR.png" alt="">
             </div>
             <div class="contentPosition">
               <h2>BreakpointOne Gmbh</h2>

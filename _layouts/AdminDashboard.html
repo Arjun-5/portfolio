@@ -1,0 +1,189 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+
+<style>
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
+</style>
+
+<body>
+  <section class="background">
+    <div class="inner">
+      <header class="major">
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">As the solo developer behind the Admin Dashboard, I conceived the idea to address
+          the growing complexity of managing VR environments. I wanted to create a solution that not only streamlined
+          real-time
+          monitoring but also allowed
+          administrators to adapt the system based on user behavior and physiological data. My goal was to develop a
+          tool that made it easy to
+          visualize user interactions, trigger events, and analyze session data—all from a single, intuitive interface.
+          By building the dashboard,
+          I aimed to enhance the flexibility and efficiency of VR training systems, ensuring they could be tailored to
+          each user's needs while
+          maintaining consistent oversight.</span>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <li class="textContent">XAML & WPF for UI design and responsiveness</li><br>
+        <li class="textContent">C# for backend logic and event handling</li><br>
+        <li class="textContent">LiveCharts for real-time data visualization</li><br>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle"">Team Information</h1>
+        <ul class=" textContent"">
+          <li>
+            <a class="headerStyle" href="https://www.linkedin.com/in/rahult5/" target="_blank">
+              Rahul
+            </a> - Development of the Admin Panel including XAML, WPF, C#, LiveCharts integration, and event management
+            systems.
+          </li>
+          </ul>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <span class="textContent">The idea behind creating the Admin Dashboard was to provide administrators with a
+          centralized, intuitive interface that simplifies the management and oversight of complex VR environments. As
+          VR training systems grow in sophistication, there was a clear need for a tool that offers real-time visibility
+          into user interactions and system performance, while also allowing for adaptive control based on physiological
+          feedback. The dashboard was conceived to streamline this process, empowering administrators to monitor stress
+          levels, trigger events, and analyze data with ease, all while ensuring the VR experience remains dynamic,
+          personalized, and effective for every user.
+        </span>
+        <br><br>
+        <iframe src="https://drive.google.com/file/d/1wLVoIJMsF9lXW1fKhEifro7ApQMUCPde/preview" width="960" height="480"
+          style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;">Real-Time Data Visualization 🌐 : </span> The admin
+          panel features a highly responsive dashboard powered by LiveCharts, allowing administrators to visualize user
+          actions, system responses, and stress events in real time. The dashboard dynamically updates based on incoming
+          data, offering a clear, graphical representation of the ongoing events in the VR environment. It leverages the
+          powerful capabilities of WPF to deliver fluid animations and responsive charting, making it easier for
+          administrators to track key performance metrics and stress indicators.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;">Event Triggering Based on User State 🎯 : </span>
+          By processing physiological data such as heart rate and motion patterns, the AI system adjusts the VR
+          environment to match the user's emotional state. When users experience stress or calmness, the AI reacts in
+          real-time, either intensifying or soothing the simulation. The admin panel manages this adaptive behavior,
+          giving administrators the ability to override or customize event triggers. Developed using C# and XAMLs
+          robust data binding, it allows seamless integration between the AI logic and the user interface.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Event Logging and Analysis 📊 : </span>
+          Every interaction within the VR system is logged and stored for post-session analysis. This data is essential
+          for improving future sessions and understanding how users respond to various stress events. The logging
+          feature includes detailed timestamps, event descriptions, and user data. By utilizing WPFs templating and
+          rich UI elements, the admin panel provides a structured and filterable log viewer that can be analyzed through
+          various time intervals or event types. This ensures administrators have a granular view of user behavior and
+          system performance.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> User Management 👥 : </span> Administrators can
+          manage user sessions directly from the panel, including monitoring user connectivity and communication with
+          the VR environment. The user management system is designed with flexibility in mind, allowing for real-time
+          updates, session control, and status monitoring. Built using C# for backend logic and XAML for front-end user
+          experience, it simplifies managing users across multiple sessions while maintaining a clean and efficient
+          interface.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Timer-Based Stress Events ⏱️ : </span>
+          Beyond AI-driven events, the admin panel also incorporates a timer-based event system. This feature triggers
+          pre-programmed stress scenarios at specified intervals, ensuring that users experience consistent simulation
+          challenges. The timer system is implemented using C# timers, and administrators can customize these intervals
+          through the panels interface. This feature guarantees that even in non-AI sessions, users undergo a
+          controlled and repeatable stress-testing process.
+        </li>
+        <br>
+        </ul>
+        <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Why is the Admin Panel important? 🌟 </span>
+        <span class="textContent">The Admin Panel is a critical component of VR training environments, providing
+          administrators with real-time insight into both user behavior and system performance. By combining AI-driven
+          event management with detailed data analysis, it ensures that the VR environment adapts dynamically to each
+          user's needs. The use of XAML and WPF in the panel’s development allows for a rich, modern user interface,
+          while C# ensures smooth backend processing. Integrating tools like LiveCharts elevates the visualization of
+          real-time data, offering clarity and precision in monitoring.
+          <br> <br>
+          This panel is indispensable for administrators aiming to optimize user experiences, adjust stress levels based
+          on physiological data, and improve safety training outcomes through detailed post-session analysis.
+          Here's a <a style="color: #f7768e;"
+            href="https://www.linkedin.com/posts/breakpoint-one_admin-panel-adaptive-vr-keep-cool-breakpoint-activity-7237486819431370752-CdlJ/">linkedIn</a>
+          post about this concept that was shared with our sponsers.
+        </span>
+      </header>
+      <header class="major">
+        <h1 class="headerStyle"">More Short Demo</h1>
+        <span class=" textContent">A seamless demo with the dashboard app connection and interacting in real-time with
+          another
+          app running on Unity Editor.
+          </span>
+          <br> <br>
+          <iframe src="https://drive.google.com/file/d/1yysSCnclQ6vGch3jINWphXUxkqJg4Xrl/preview" width="960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+          <br><br>
+          <span class=" textContent">A seamless demo with the dashboard app connection and interacting in real-time with
+            another
+            app running on Oculus Quest.
+          </span>
+          <iframe src="https://drive.google.com/file/d/1ecMQ-jAikaDXUdlcinyZcxS082jUlqlZ/preview" width="960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+      </header>
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

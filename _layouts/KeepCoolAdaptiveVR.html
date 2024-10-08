@@ -1,0 +1,165 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+
+<style>
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
+</style>
+
+<body>
+  <section class="background">
+    <div class="inner">
+      <header class="major">
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">In this groundbreaking research project, we are developing an AI-based, adaptive
+          virtual reality (#VR) learning environment together with our partners at the Hochschule für Technik und
+          Wirtschaft Berlin (htw), led by the Creative Media Research Group, and in partnership with the Serrala Group
+          GmbH. The goal of Keep Cool is to realistically simulate hazardous situations in industrial and commercial
+          contexts and thus effectively train the learner's risk assessment, perception and behavior. 🛠️🧠
+          🤯🥽 Under the leadership of the Berlin University of Applied Sciences (htw), the consortium
+          focuses on the (simulation) mechanical and audio-visual adaptation (MuAVA) of VR learning environments based
+          on the individual vital data of the learner. 🌡️🩺
+        </span>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle"">Tools & Softwares Used</h1>
+        <span class=" textContent"> Unity Engine, Blender, Autodesk Maya, Audacity, Krita, Inkscape and Oculus
+          Quest</span>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle"">Team Information</h1>
+        <ul class=" textContent"">
+          <li>
+            <a class="headerStyle" href="https://www.linkedin.com/in/rahult5/" target="_blank">
+              Rahul
+            </a> - Design, development and art works.
+          </li>
+          </ul>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;">Scenario 1 -
+            Construction Worker :</span> This is the first of three test scenarios developed as part of our research
+          project KeepCool - Adaptive VR. 👷🏗️ How can #AI be used to adapt individual training needs based on vital
+          data in a #VR learning environment to train for hazardous situations in industrial and craft contexts?
+          <br><br>
+          In the construction worker scenario, set against the backdrop of a busy construction site, our learners must
+          perform a series of tasks critical to their role. 🚧 From installing nail plates to protect pipes to checking
+          and replacing fuses, each action is critical to maintaining safety and efficiency. But it's not just the tasks
+          that make this scenario challenging; learners also face a variety of stressors designed to simulate real-life
+          conditions. 🌪️🌧️
+          Here's a <a style="color: #f7768e;"
+            href="https://www.linkedin.com/posts/breakpoint-one_scenario-1-keepcool-adaptive-vr-research-activity-7183768301020323842-iGPy">linkedIn</a>
+          post about
+          this scenario shared with our sponsers.
+          <br><br>
+          <iframe src="https://drive.google.com/file/d/15pWKtSACT9ihyafCZS8_sZhG6gR7VepK/preview" width="960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Scenario 2 -
+            Piloting a Helicopter : </span> In the helicopter pilot scenario, set against the dynamic and unpredictable
+          skies, our learners must execute a series of maneuvers crucial to safe and efficient flight. 🚁 From mastering
+          takeoffs and landings on varied terrain to handling mid-air emergencies like engine failure or navigating
+          through turbulent weather conditions, each action tests their precision and decision-making. But it’s not just
+          the flying skills that make this scenario intense; learners must also cope with a variety of environmental
+          stressors, such as sudden storm systems, equipment malfunctions, and air traffic challenges, to simulate
+          real-world aviation pressures. 🌩️🌬️
+          <br><br>
+          <iframe src="https://drive.google.com/file/d/1AdgYu_QkeeT0CYvPoJd3cWcwLBs02V-U/preview" width="960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Scenario 3 -
+            Mining : </span> In the mining scenario, set deep within a bustling underground mine, our learners must
+          carry out a series of critical operations that ensure both productivity and safety. ⛏️ From safely detonating
+          charges to extracting valuable resources with heavy machinery, each task requires precise execution under
+          strict time constraints. But beyond the physical demands, learners must navigate the inherent dangers of the
+          mining environment, such as unpredictable rockfalls, equipment malfunctions, and low visibility, while
+          maintaining communication with their team. 💥⚙️ The added stressors of confined spaces, sudden cave-ins, and
+          hazardous gases simulate the intense, high-risk conditions faced in real-world mining operations. 🌫️
+          <br><br>
+          <iframe src="https://drive.google.com/file/d/17UmnBtPvOMdWquo-xDBuc9_fp38q9biK/preview" width="960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+          <br>Progress in the mining scenario <br><br>
+          <iframe src="https://drive.google.com/file/d/1TO5zZTuHfeb66GLBPIFVJZoruwR-Cet3/preview" width=" 960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;">Baseline Data Measurement Scene : </span> TIn the
+          Baseline Data Immersion Scene, learners are invited to step into a tranquil natural environment designed
+          solely
+          for relaxation and mindfulness. 🦋 With butterflies drifting lazily through the air and swings gently swaying
+          in
+          the breeze, the calming sounds of nature—rustling leaves, birdsong, and distant water—envelop the scene. 🌳🎶
+          The focus here is not on tasks but on simply being present. Users can take a deep breath, immerse themselves
+          in
+          the peaceful atmosphere, and enjoy the serene visuals and sounds, allowing for full mental and sensory
+          relaxation. 🌿✨ This scene encourages mindfulness, stress relief, and a moment of calm amidst the noise of
+          everyday life.
+          Here's a <a
+            style="color: #f7768e;" href="https://www.linkedin.com/posts/breakpoint-one_keepcool-vr-breakpointone-activity-7224039046807781376-ITPy">linkedIn</a>
+          post about testing some of the usecases with our sponsers.
+          <br><br>
+          <iframe src="https://drive.google.com/file/d/1kgYOepqvvfEjKKA_FXaCifyEWjs_RAav/preview" width="960"
+            height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        </li>
+      </header>
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

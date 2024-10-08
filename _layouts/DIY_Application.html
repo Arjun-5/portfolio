@@ -1,0 +1,176 @@
+<html>
+
+{% include head.html %}
+{% include header.html %}
+
+<style>
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+  .textContent{
+      font-family: 'Quicksand';
+      color: #7aa2f7;
+    }
+</style>
+
+<body>
+  <section class="background">
+    <div class="inner">
+      <header class="major">
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">I made significant contributions to a DIY VR project, focusing exclusively on the Inspector section, which 
+          provides users with a detailed, intuitive interface for interacting with selected objects. This system offers a comprehensive overview 
+          of every aspect of the selected object, including its properties and components, giving users the ability to easily modify and manage 
+          the objects attributes. By ensuring the interface was user-friendly and visually clear, I helped create a more seamless and efficient 
+          workflow for end users. The inspector also supports advanced functionalities such as drag-and-drop operations, multi-object selection, 
+          and real-time updates, making it a versatile tool for managing objects within the VR environment.</span>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle"">Tools & Softwares Used</h1>
+        <span class="textContent"> Unity Engine and Oculus Quest</span>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle"">Team Information</h1>
+        <ul class="textContent"">
+          <li>
+            <a class="headerStyle" href="https://www.linkedin.com/in/rahult5/" target="_blank">
+              Rahul
+            </a> - Custom Inspector Development
+          </li>
+          </ul>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <span class="textContent">The project was setup completely in Unity Engine and it was designated to run on Oculus
+          Quest VR device. The project was
+          managed by two members (including me) and my task was to create a custom inpsector setup that can used in
+          runtime, mimicing the Unity
+          Inspector. In the DIY VR project, the inspector section plays a critical role in providing a clear,
+          intuitive interface for interacting with objects in the virtual environment. It is designed to give users
+          direct control
+          over the selected object by displaying all relevant properties and components in a well-organized manner.
+        </span>
+        <br><br>
+        <iframe src="https://drive.google.com/file/d/1U6NfuO6-yujsP2Bkwrmiw9NSjCEhmQl7/preview" width="960"
+          height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;">Transform Section :</span>  This section prominently shows the core properties of the object, such
+          as its name, position,
+          rotation, and scale values. Users can directly edit these properties to adjust how the object appears and
+          behaves in the scene.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Component List Section: </span> Below the transform section is a list of all components attached to the object.
+          Each component is represented by a button with an icon, making it easy to identify at a glance.
+          These components can include built-in components like rigidbodies or colliders,
+          as well as custom scripts or user-defined components.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Component Details: </span> When a user clicks on a component button, detailed information about that component is
+          displayed.
+          This information is broken down into fields and references. Fields can include any editable property within
+          the component,
+          while references point to other objects or components in the scene. The system uses reflection to
+          automatically extract and
+          display all the fields in a clean, readable format.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Reference Selection Panel: </span> If a component contains references (e.g., to a collider or another object),
+          clicking a reference button opens a small panel displaying all relevant game objects that can be assigned to
+          this reference.
+          For instance, if the reference is a collider, the panel will list all game objects that have collider
+          components.
+          Users can then either select an object from the list or use a drag-and-drop feature to assign it.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Drag-and-Drop Support: </span> The inspector allows users to drag objects from the scene directly into the reference
+          fields in the
+          inspector, making it simple to assign components and objects without needing to type in or search for names
+          manually.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Lock Button: </span> A lock button is provided to keep the current object’s inspector view fixed, allowing users to
+          interact with
+          other parts of the scene without losing the view of the currently selected object’s details. This is
+          especially useful when
+          adjusting multiple objects or comparing settings across objects.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Default Component Selection: </span> Upon selecting an object, the first component in the list is automatically
+          selected, and its
+          details are loaded into the inspector. This saves the user time by immediately providing access to component
+          information
+          without extra clicks.
+        </li>
+        <br>
+        <li class="textContent">
+          <span style="font-family: 'Cooper Black'; color: #cfc9c2;"> Multiple Object Selection: </span> When multiple objects are selected in the scene, the inspector intelligently
+          updates to show only
+          the components that are shared across all the selected objects. This allows for bulk-editing shared
+          properties without
+          losing track of individual object specifics.
+        </li>
+        </ul>
+        <br>
+        <span class="textContent">The entire inspector system is designed to enhance usability and efficiency in VR
+          development, ensuring that users
+          have a powerful, flexible tool to manage object properties, components, and references seamlessly. The
+          combination of reflection-based
+          field extraction, dynamic reference selection, and a user-friendly interface makes this inspector a vital part
+          of the VR development
+          workflow.
+        </span>
+      </header>
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+</body>
+
+</html>
