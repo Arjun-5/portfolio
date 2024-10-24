@@ -3,77 +3,104 @@
 {% include head.html %}
 {% include header.html %}
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
 
-.demo {
-    width:80%;
-}
-.demo ul {
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .demo {
+    width: 80%;
+  }
+
+  .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
-}
-.demo li {
+    margin-bottom: 0;
+  }
+
+  .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
-}
-.demo img {
+    cursor: pointer;
+  }
+
+  .demo img {
     display: block;
     height: auto;
     max-width: 100%;
-}
+  }
 
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">Modeled, UV'ed, Rigged and Animated (also particle effects) a rocket flying scene using 
-            Autodesk Maya. <br><br>
-            <iframe src="https://drive.google.com/file/d/1B0h3xOWvrTI1He4Fh9GfAOYxNqUrojjr/preview" width="1080" 
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">Modeled, UV'ed, Rigged and Animated (also particle effects) a rocket flying scene
+          using
+          Autodesk Maya. <br><br>
+          <iframe src="https://drive.google.com/file/d/1B0h3xOWvrTI1He4Fh9GfAOYxNqUrojjr/preview" width="1080"
             height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
-            <br>>
-            Designed a simple room setup and created a cinematic sequence in Unreal Engine<br><br>
-            <iframe src="https://drive.google.com/file/d/1iwAzYa8u3yUSD7YpG2zZ6LR84ovYafay/preview" width="1080" 
+          <br><br>
+          Designed a simple room setup and created a cinematic sequence in Unreal Engine<br><br>
+          <iframe src="https://drive.google.com/file/d/1iwAzYa8u3yUSD7YpG2zZ6LR84ovYafay/preview" width="1080"
             height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
-            </p>
+        </span>
       </header>
 
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> Autodesk Maya and Unreal Game Engine</p>
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <span class="textContent"> Autodesk Maya and Unreal Game Engine</span>
       </header>
-
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
-<script>
-$('#vrHackathonLightSlider').lightSlider({
-    gallery: true,
-    item: 1,
-    loop:true,
-    slideMargin: 0,
-    thumbItem: 9,
-    speed: 400, 
-    auto: true,
-    loop: true,
-    slideEndAnimation: true,
-    pause: 2000
-});
-  </script>
+
 </html>

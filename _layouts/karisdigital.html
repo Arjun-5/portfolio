@@ -3,112 +3,156 @@
 {% include head.html %}
 {% include header.html %}
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
 
-.demo {
-    width:80%;
-}
-.demo ul {
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .demo {
+    width: 80%;
+  }
+
+  .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
-}
-.demo li {
+    margin-bottom: 0;
+  }
+
+  .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
-}
-.demo img {
+    cursor: pointer;
+  }
+
+  .demo img {
     display: block;
     height: auto;
     max-width: 100%;
-}
+  }
 
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">After gradution from TU Berlin I joined a Berlin based healthcare startup, <a 
-            href="https://www.karisdigital.com" target="_blank">Karis Digital</a>. The company comprised of three members (including 
-            me) and I was the only programmer that was working on the prototype so that we could present our idea to potential 
-            investors to provide additional funding once the current funding from the Berlin senate runs out. My task was to create
-            a mental puzzle game and a painting application with a multiplayer community setup. The puzzle game can be accessed from 
-            <a href="https://artmonia-karisdigital.github.io/ArtTherapy-WebVR/">this link</a>. The painting application can be accessed
-            from <a href="https://karis-webgame.web.app">this link</a>.
-            </p>
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">After gradution from TU Berlin I joined a Berlin based healthcare startup, <a class="textColor"
+            href="https://visionhealthpioneers.de/introducing-karis-the-mental-health-startup-destigmatizing-adult-adhd/" target="_blank">Karis Digital</a>. The company comprised of three
+          members (including
+          me) and I was the only programmer that was working on the prototype so that we could present our idea to
+          potential
+          investors to provide additional funding once the current funding from the Berlin senate runs out. My task was
+          to create
+          a mental puzzle game and a painting application with a multiplayer community setup. The puzzle game can be
+          accessed from
+          <a class="textColor" href="https://artmonia-karisdigital.github.io/ArtTherapy-WebVR/">this link</a>. The painting application
+          can be accessed
+          from <a class="textColor" href="https://karis-webgame.web.app">this link</a>.
+        </span>
       </header>
 
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> Unity Game Engine and Photon Multiplayer package</p>
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <span class="textContent"> Unity Game Engine and Photon Multiplayer package</span>
       </header>
 
-      <header class ="major">
-        <h1>Team Information</h1>
-        <ul class="textColor customList" style="color: #F2AA4C;">
+      <header class="major">
+        <h1 class="headerStyle">Team Information</h1>
+        <ul class="textContent">
           <li>
-            <a href = "https://www.linkedin.com/in/rahult5/">
+            <a href="https://www.linkedin.com/in/rahult5/" class="textColor">
               Rahul
-            </a> - Development using Unity Engine and performing user study on people diagnosed with ADHD. 
+            </a> - Development using Unity Engine and performing user study on people diagnosed with ADHD.
           </li>
         </ul>
       </header>
 
-      <header class ="major">
-        <h1>Project Description</h1>
-        <h3>Puzzle Game</h3>
-        <p class="textColor">The prototype of puzzle game contains a single level at the time of development with four different 
-          paintings but it was planned to have more levels in the future, based on funding. This game was aimed at addressing 
-          the attentiveness and concentration of the patient when trying to solve a puzzle. After completiong we perform 
-          some calculation at the end based on the time taken and other factors such as number of times he/she might have 
-          lost a round and presenting the user with a detailed report on how they performed and what all could be improved. 
-        </p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1b22fKewUOjzzhDsqZtzF7V4CN2FE5TRR/preview" width="1080" 
-        height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
-        <h3>Painting Game - Multiplayer</h3>
-        <p class="textColor">This is a multiplayer unity webgl application where four different users can connect to a single 
-          room and share their paintings with each other. When you first start the application you will be placed in a single
-          room where the user has the option to paint on a canvas for the questions that are asked. Upon completion you can 
-          enter the multiplayer area where the paintings of all the users can be viewed. This space was constructed so as to
-          give the users a feeling of community space where like minded people can share their artwork and discuss and describe
-          their feeling with them and provide/receive mental support for/from their counterparts. 
-        </p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/1VD8hmhsLcZn9F85IjvbiZ1gFRybOwiwL/preview" width="1080" 
-        height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <h3 class="textColor" style="font-family: 'Cooper Black';">Puzzle Game</h3>
+        <span class="textContent">The prototype of puzzle game contains a single level at the time of development with
+          four
+          different
+          paintings but it was planned to have more levels in the future, based on funding. This game was aimed at
+          addressing
+          the attentiveness and concentration of the patient when trying to solve a puzzle. After completiong we perform
+          some calculation at the end based on the time taken and other factors such as number of times he/she might
+          have
+          lost a round and presenting the user with a detailed report on how they performed and what all could be
+          improved.
+        </span>
+        <br><br>
+        <iframe src="https://drive.google.com/file/d/1b22fKewUOjzzhDsqZtzF7V4CN2FE5TRR/preview" width="1080"
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <br><br>
+        <h3 class="textColor" style="font-family: 'Cooper Black';">Painting Game - Multiplayer</h3>
+        <span class="textContent">This is a multiplayer unity webgl application where four different users can connect
+          to a
+          single
+          room and share their paintings with each other. When you first start the application you will be placed in a
+          single
+          room where the user has the option to paint on a canvas for the questions that are asked. Upon completion you
+          can
+          enter the multiplayer area where the paintings of all the users can be viewed. This space was constructed so
+          as to
+          give the users a feeling of community space where like minded people can share their artwork and discuss and
+          describe
+          their feeling with them and provide/receive mental support for/from their counterparts.
+        </span>
+        <br><br>
+        <iframe src="https://drive.google.com/file/d/1VD8hmhsLcZn9F85IjvbiZ1gFRybOwiwL/preview" width="1080"
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
       </header>
 
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
-<script>
-$('#vrHackathonLightSlider').lightSlider({
-    gallery: true,
-    item: 1,
-    loop:true,
-    slideMargin: 0,
-    thumbItem: 9,
-    speed: 400, 
-    auto: true,
-    loop: true,
-    slideEndAnimation: true,
-    pause: 2000
-});
-  </script>
+
 </html>

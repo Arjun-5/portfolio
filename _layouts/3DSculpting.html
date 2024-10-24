@@ -3,91 +3,135 @@
 {% include head.html %}
 {% include header.html %}
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
 
-.demo {
-    width:80%;
-}
-.demo ul {
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .demo {
+    width: 80%;
+  }
+
+  .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
-}
-.demo li {
+    margin-bottom: 0;
+  }
+
+  .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
-}
-.demo img {
+    cursor: pointer;
+  }
+
+  .demo img {
     display: block;
     height: auto;
     max-width: 100%;
-}
+  }
 
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">
-            Some 3D characters that I modelled using Autodesk Maya and Sculpted using Autodesk Mudbox.
-          </p>
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <p class="textContent">
+          Some 3D characters that I modelled using Autodesk Maya and Sculpted using Autodesk Mudbox.
+        </p>
       </header>
 
-      <header class = "major">
-        <h1>Images of the sculpted 3D models</h1>
-      
+      <header class="major">
+        <h1 class="headerStyle">Images of the sculpted 3D models</h1>
         <div class="munsterHackSlide">
           <ul id="3DPrintSlider">
-              <li data-thumb="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_1.gif">
-                  <img src="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_1.gif" style="height: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_2.png">
-                  <img src="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_2.png" style="height: 100%;"/>
-              </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_1.gif">
+              <img src="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_1.gif" style="height: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_2.png">
+              <img src="{{ site.baseurl }}/assets/images/3DSculpt/3DSculpt_2.png" style="height: 100%;" />
+            </li>
           </ul>
-      </div>
+        </div>
       </header>
 
-
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> 
-          3D Modeling : Autodesk Maya <br>
-          3D Sculpting : Autodesk Mudbox <br> 
-          Drawing Tablet : Wacom
-          <br>
-        </p>
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <ul class="textContent">
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">3D Modeling</span> - Autodesk Maya.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">3D Sculpting</span> - Autodesk Mudbox.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">Drawing Tablet</span> - Wacom.
+          </li>
+        </ul>
       </header>
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
 <script>
-$('#3DPrintSlider').lightSlider({
+  $('#3DPrintSlider').lightSlider({
     gallery: true,
     item: 1,
-    loop:true,
+    loop: true,
     slideMargin: 0,
     thumbItem: 9,
-    speed: 400, 
+    speed: 400,
     auto: true,
     loop: true,
     slideEndAnimation: true,
     pause: 2000
-});
-  </script>
+  });
+</script>
+
 </html>

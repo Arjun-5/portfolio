@@ -4,156 +4,238 @@
 {% include header.html %}
 
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
 
-.demo {
-    width:80%;
-}
-.demo ul {
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .demo {
+    width: 80%;
+  }
+
+  .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
-}
-.demo li {
+    margin-bottom: 0;
+  }
+
+  .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
-}
-.demo img {
+    cursor: pointer;
+  }
+
+  .demo img {
     display: block;
     height: auto;
     max-width: 100%;
-}
-a.nounderline {
-  text-decoration: none; 
-  color: black;
-}
-a.nounderline:hover {
-  text-decoration: none; 
-  color: black;
-}
+  }
+
+  a.nounderline {
+    text-decoration: none;
+    color: black;
+  }
+
+  a.nounderline:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">Unity based mobile Game that was created for my Indie Game Studio - LostThought studios. It was
-            developed, tested and released in a span of 3 months when I was also working on my Universtiy master's degree thesis.<br>
-            <a href='https://play.google.com/store/apps/details?id=com.LostThoughtStudios.Pallanguzhi&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="nounderline">
-              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="height: 20%;"/></a> 
-          </p>
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">A Unity-based mobile game was developed for my indie game studio, LostThought Studios.
+          The entire game, from concept to release, was completed in a span of 3 months, while I was simultaneously
+          working on my university master's degree thesis. Despite its success during the initial release, the game is
+          now defunct and has been removed from the Google Play Store due to constant policy changes that prevented me
+          from updating certain aspects. However, more detailed information can be found in the following photos and
+          project description<br>
+          <a href='https://play.google.com/store/apps/details?id=com.LostThoughtStudios.Pallanguzhi&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+            class="nounderline">
+            <img alt='Get it on Google Play'
+              src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+              style="height: 20%;" /></a>
+        </span>
       </header>
 
-      <header class = "major">
-        <h1>Images from the Mobile Game</h1>
-      
+      <header class="major">
+        <h1 class="headerStyle">Images from the Mobile Game</h1>
+
         <div class="munsterHackSlide">
           <ul id="pallanguzhiSlider">
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_1.png">
-                  <img src="{{ site.baseurl }}/assets/images/Mg/MG_1.png" style="height: 100%; width: 50%;" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_2.png">
-                  <img src="{{ site.baseurl }}/assets/images/Mg/MG_2.png" style="height: 100%; width: 50%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_3.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_3.png" style="height: 100%; width: 50%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_4.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_4.png" style="height: 100%; width: 50%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_5.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_5.png" style="height: 100%; width: 50%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_6.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_6.png" style="height: 100%; width: 50%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_7.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_7.png" style="height: 100%; width: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_8.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_8.png" style="height: 100%; width: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_9.png">
-                <img src="{{ site.baseurl }}/assets/images/Mg/MG_9.png" style="height: 100%; width: 100%;"/>
-              </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_1.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_1.png" style="height: 100%; width: 50%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_2.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_2.png" style="height: 100%; width: 50%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_3.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_3.png" style="height: 100%; width: 50%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_4.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_4.png" style="height: 100%; width: 50%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_5.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_5.png" style="height: 100%; width: 50%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_6.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_6.png" style="height: 100%; width: 50%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_7.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_7.png" style="height: 100%; width: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_8.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_8.png" style="height: 100%; width: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/Mg/MG_9.png">
+              <img src="{{ site.baseurl }}/assets/images/Mg/MG_9.png" style="height: 100%; width: 100%;" />
+            </li>
           </ul>
-      </div>
+        </div>
       </header>
 
 
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> 3D Modeling : Autodesk Maya <br>
-          3D Sculpting : Autodesk Mudbox<br>
-          Texture Painting : Substance Painter<br>
-          Game Development : Unity Engine<br>
-          UI & Texture Editing : PhotoPea<br>
-          Testing : Android Studio & Bluestacks<br></p>
-      </header>
-
-      <header class ="major">
-        <h1>Team Information</h1>
-        <ul class="textColor customList" style="color: #F2AA4C;">
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <ul class="textContent">
           <li>
-            <a href = "https://www.linkedin.com/in/rahult5/">
-              Rahul
-            </a> - Development using Unity Engine and debugging on Android Studio and Bluestacks. 
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">3D Modeling</span> - Autodesk Maya 2020.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">3D Sculpting</span> - Autodesk Mudbox 2020.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">Texture Painting</span> - Substance Painter.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">Game & Concept Development</span> - Unity Game
+            Engine
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">UI & Texture Editing</span> - Figma, Krita and
+            PhotoPea.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">Testing and Benchmarking</span> - Android Studio
+            & Bluestacks.
           </li>
         </ul>
       </header>
 
-      <header class ="major">
-        <h1>Project Description</h1>
-        <p class="textColor">Pallankuzhi is played on a rectangular board with 2 rows and 7 columns. There are a total of 14 
-          cups and 146 counters. For the counters in the game, seeds, shells, small stones can be used. The game ends when one 
-          of the players captures all the shells/holes of the opponent. On his turn a player lifts the seeds from any of his 
-          holes and, going counter-clockwise, distributes one seed into the following holes. After a player has dropped his 
-          last seed, he takes the seeds from the next hole and distributes accordingly. If the last seed falls into a hole that 
-          is empty, then the seeds in the hole following the empty hole are captured by the player and placed into his store.
+      <header class="major">
+        <h1 class="headerStyle">Team Information</h1>
+        <ul class="textContent">
+          <li>
+            <a style="font-family: 'Cooper Black';color: #F2AA4C;" href="https://www.linkedin.com/in/rahult5/">
+              Rahul
+            </a> - Development using Unity Engine and debugging on Android Studio and Bluestacks.
+          </li>
+        </ul>
+      </header>
+
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <span class="textContent">Pallankuzhi is played on a rectangular board with 2 rows and 7 columns. There are a
+          total
+          of 14
+          cups and 146 counters. For the counters in the game, seeds, shells, small stones can be used. The game ends
+          when one
+          of the players captures all the shells/holes of the opponent. On his turn a player lifts the seeds from any of
+          his
+          holes and, going counter-clockwise, distributes one seed into the following holes. After a player has dropped
+          his
+          last seed, he takes the seeds from the next hole and distributes accordingly. If the last seed falls into a
+          hole that
+          is empty, then the seeds in the hole following the empty hole are captured by the player and placed into his
+          store.
           <br><br>
-          When the first round is over players take the coins that are stored in their counters and fill as many of their holes 
-          as possible with the coins/counters. 5 coins are required for to have the each holes filled, The winner will have a 
-          surplus of counters which are kept in his store. The loser of the first round will be unable to fill all of his holes.
-          These unfilled holes are marked as "rubbish holes." In the next round play continues as before, but without the 
+          When the first round is over players take the coins that are stored in their counters and fill as many of
+          their holes
+          as possible with the coins/counters. 5 coins are required for to have the each holes filled, The winner will
+          have a
+          surplus of counters which are kept in his store. The loser of the first round will be unable to fill all of
+          his holes.
+          These unfilled holes are marked as "rubbish holes." In the next round play continues as before, but without
+          the
           rubbish holes being included.
           <br><br>
-          During the game if a player has enough counters to fill any of his rubbish holes back up their status is removed and
-          they are again used during play. The game is over when a player is unable to fill any cups with 5 counters at the 
+          During the game if a player has enough counters to fill any of his rubbish holes back up their status is
+          removed and
+          they are again used during play. The game is over when a player is unable to fill any cups with 5 counters at
+          the
           end of a round.
-        </p>
-        <br>
-        <iframe src="https://drive.google.com/file/d/17SOnsndMPkKr47C9h6dzLQ7ndHiMy5bO/preview" width="1080" 
-        height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        </span>
+        <br><br>
+        <iframe src="https://drive.google.com/file/d/17SOnsndMPkKr47C9h6dzLQ7ndHiMy5bO/preview" width="1080"
+          height="620" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
       </header>
 
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
 <script>
-$('#pallanguzhiSlider').lightSlider({
+  $('#pallanguzhiSlider').lightSlider({
     gallery: true,
     item: 1,
-    loop:true,
+    loop: true,
     slideMargin: 0,
     thumbItem: 9,
-    speed: 400, 
+    speed: 400,
     auto: true,
     loop: true,
     slideEndAnimation: true,
     pause: 2000
-});
-  </script>
+  });
+</script>
+
 </html>

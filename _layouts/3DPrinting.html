@@ -3,101 +3,147 @@
 {% include head.html %}
 {% include header.html %}
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
 
-.demo {
-    width:80%;
-}
-.demo ul {
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .demo {
+    width: 80%;
+  }
+
+  .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
-}
-.demo li {
+    margin-bottom: 0;
+  }
+
+  .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
-}
-.demo img {
+    cursor: pointer;
+  }
+
+  .demo img {
     display: block;
     height: auto;
     max-width: 100%;
-}
+  }
 
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">
-            All the models were designed by me and was printed at the 3D lab of Technische Universität Berlin. 
-            I really enjoyed designing the Violin and Wall-E(My Favorite cartoon Character). The Violin was hand printed 
-            using Acrylic paint.
-          </p>
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">
+          All the models were designed by me and was printed at the 3D lab of Technische Universität Berlin.
+          I really enjoyed designing the Violin and Wall-E(My Favorite cartoon Character). The Violin was hand printed
+          using Acrylic paint.
+        </span>
       </header>
 
-      <header class = "major">
-        <h1>Printed Objects</h1>
-      
+      <header class="major">
+        <h1 class="headerStyle">Printed Objects</h1>
         <div class="munsterHackSlide">
           <ul id="3DPrintSlider">
-              <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_1.jpeg">
-                  <img src="{{ site.baseurl }}/assets/images/3D/3D_1.jpeg" style="height: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_2.jpeg">
-                  <img src="{{ site.baseurl }}/assets/images/3D/3D_2.jpeg" style="height: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_3.jpeg">
-                <img src="{{ site.baseurl }}/assets/images/3D/3D_3.jpeg" style="height: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_4.jpeg">
-                <img src="{{ site.baseurl }}/assets/images/3D/3D_4.jpeg" style="height: 100%;"/>
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_5.jpeg">
-                <img src="{{ site.baseurl }}/assets/images/3D/3D_5.jpeg" style="height: 100%;"/>
-              </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_1.jpeg">
+              <img src="{{ site.baseurl }}/assets/images/3D/3D_1.jpeg" style="height: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_2.jpeg">
+              <img src="{{ site.baseurl }}/assets/images/3D/3D_2.jpeg" style="height: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_3.jpeg">
+              <img src="{{ site.baseurl }}/assets/images/3D/3D_3.jpeg" style="height: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_4.jpeg">
+              <img src="{{ site.baseurl }}/assets/images/3D/3D_4.jpeg" style="height: 100%;" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/3D/3D_5.jpeg">
+              <img src="{{ site.baseurl }}/assets/images/3D/3D_5.jpeg" style="height: 100%;" />
+            </li>
           </ul>
-      </div>
+        </div>
       </header>
 
 
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> 
-          3D Modeling : Autodesk Maya <br>
-          Printer : ZPrinter & Others
-          <br>
-        </p>
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <ul class="textContent">
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">3D Modeling</span> - Autodesk Maya.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">3D Sculpting</span> - Autodesk Mudbox.
+          </li>
+          <li>
+            <span style="font-family: 'Cooper Black';color: #F2AA4C;">Printing</span> - ZPrinter & Others.
+          </li>
+        </ul>
       </header>
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
 <script>
-$('#3DPrintSlider').lightSlider({
+  $('#3DPrintSlider').lightSlider({
     gallery: true,
     item: 1,
-    loop:true,
+    loop: true,
     slideMargin: 0,
     thumbItem: 9,
-    speed: 400, 
+    speed: 400,
     auto: true,
     loop: true,
     slideEndAnimation: true,
     pause: 2000
-});
-  </script>
+  });
+</script>
+
 </html>
