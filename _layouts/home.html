@@ -4,6 +4,8 @@
 {% include header.html %}
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
     <style>
         @font-face {
             font-family: 'Cooper Black';
@@ -192,6 +194,7 @@
                             <div class="containerBox">
                                 <!-- <p class="marvel">MARVEL</p> -->
                                 <!--model-->
+
                                 <img src="{{ site.baseurl }}/assets/images/projectImages/DIY_Project.png"
                                     class="containerModel">
                                 <!--details-->
@@ -256,7 +259,7 @@
                     <!--2------------------------------>
                     <li class="item-a">
                         <!--slider-box-->
-                        <a href="{{ site.baseurl }}/game2.html">
+                        <a href="{{ site.baseurl }}/munsterHack.html">
                             <div class="containerBox">
                                 <!-- <p class="marvel">MARVEL</p> -->
                                 <!--model-->
@@ -277,7 +280,7 @@
                         </a>
                     </li>
                     <li class="item-a">
-                        <a href="{{ site.baseurl }}/game3.html">
+                        <a href="{{ site.baseurl }}/vrhackathon.html">
                             <div class="containerBox">
 
                                 <img src="{{ site.baseurl }}/assets/images/projectImages/celxHuobi.png"
@@ -362,28 +365,25 @@
     </section>
     <br>
     {% include footer.html %}
-</body>
-
-
-<!-- This is also includeed in footer check in future if any jquery button issues -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/lightslider.js"></script>
-<script type="text/javascript">
-    // JavaScript Document
-    $(document).ready(function () {
-        $('#homepageSlider').lightSlider({
-            autoWidth: true,
-            speed: 1000,
-            pause: 4000,
-            auto: true,
-            loop: true,
-            slideMargin: 150,
-            pauseOnHover: true,
-            onSliderLoad: function () {
-                $('#homepageSlider').removeClass('cs-hidden');
-            }
+    <!-- This is also includeed in footer check in future if any jquery button issues -->
+    <script type="text/javascript">
+        // JavaScript Document
+        $(document).ready(function () {
+            $('#homepageSlider').lightSlider({
+                autoWidth: true,
+                speed: 1000,
+                pause: 4000,
+                auto: true,
+                loop: true,
+                slideMargin: 150,
+                pauseOnHover: true,
+                onSliderLoad: function () {
+                    $('#homepageSlider').removeClass('cs-hidden');
+                }
+            });
         });
-    });
-</script>
+    </script>
+
+</body>
 
 </html>

@@ -4,94 +4,133 @@
 {% include header.html %}
 
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
+
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">I was one of the many participants of this wonderful <a href="https://www.wearevr.berlin" 
-            target="_blank">
-            hackathon</a> aimed at VR/Game developers all over the world, held in Berlin from 3<sup>rd</sup> 
-            August to 19<sup>th</sup> August. We were supposed to propose novel solutions to a virtual helicopter 
-            cockpit by not emulating the existing cockpit setup but re-designing to utilize the full power of VR.
-          </p>
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <p class="textContent" style="text-align: justify;">
+          As a solo developer, I had the incredible opportunity to participate in the global VR/Game developers <a
+            href="https://www.wearevr.berlin" target="_blank">hackathon</a> in Berlin, held from August 3<sup>rd</sup>
+          to 19<sup>th</sup>. The focus of the challenge was to completely reimagine the design of a virtual helicopter
+          cockpit—not by simply replicating existing layouts, but by fully embracing the immersive possibilities of VR
+          to create a truly intuitive and forward-thinking interface. This experience drove me to think beyond
+          traditional control schemes and interaction methods, pushing the boundaries of what's possible in virtual
+          reality design.
+        </p>
       </header>
 
-      <header class = "major">
-        <h1>Proposed Idea</h1>
+      <header class="major">
+        <h1 class="headerStyle">Proposed Idea</h1>
         <img src="{{ site.baseurl }}/assets/images/IdeaNapkin.png">
       </header>
 
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> Unreal Engine 5.0, Arcgis, Cesium for Unreal Engine, Oculus Quest 2, Photoshop and ArcGIS CityEngine</p>
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <p class="textContent"> Unreal Engine 5.0, Arcgis, Cesium for Unreal Engine, Oculus Quest 2, Photoshop and
+          ArcGIS
+          CityEngine</p>
       </header>
 
-      <header class ="major">
-        <h1>Team Information</h1>
-        <ul class="textColor customList" style="color: #F2AA4C;">
+      <header class="major">
+        <h1 class="headerStyle">Team Information</h1>
+        <ul class="textContent" style="text-align: justify;">
           <li>
-            <a href = "https://www.linkedin.com/in/rahult5/" target="_blank">
+            <a href="https://www.linkedin.com/in/rahult5/" target="_blank">
               Rahul
-            </a> - VR Development Using Unreal Engine 
-            (C++/Blueprint) and some UI designing using Photoshop and research on Arcgis and Cesium for Game Engine 
+            </a> - VR Development Using Unreal Engine
+            (C++/Blueprint) and some UI designing using Photoshop and research on Arcgis and Cesium for Game Engine
           </li>
           <br>
           <li>
             <a href="www.linkedin.com/in/palaniappan-mohan" target="_blank">
-              Palaniappan Mohan </a>- UI designing using Photoshop, 
-              3D City designing using Arcgis CityEngine and research on Arcgis and Cesium for Game Engine
+              Palaniappan Mohan </a>- UI designing using Photoshop,
+            3D City designing using Arcgis CityEngine and research on Arcgis and Cesium for Game Engine
           </li>
         </ul>
       </header>
 
-      <header class ="major">
-        <h1>Project Description</h1>
-        <p class="textColor">The project was setup completely in Unreal Engine 5.0 and it was designated to run on Oculus Quest 2 VR device. The 
-          development spanned over a period of two weeks - I was mostly working on it after my work hours. The aim was to sort of
-          bring a balance between the existing setup and pitch in some level of invovation. This way we make it easier for people 
-          to relate with the existing setup and possible updation that could make things a lot easier to comprehend. Here's a video 
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <p class="textContent" style="text-align: justify;">The project was setup completely in Unreal Engine 5.0 and it
+          was designated to run on
+          Oculus Quest 2 VR device. The
+          development spanned over a period of two weeks - I was mostly working on it after my work hours. The aim was
+          to sort of
+          bring a balance between the existing setup and pitch in some level of invovation. This way we make it easier
+          for people
+          to relate with the existing setup and possible updation that could make things a lot easier to comprehend.
+          Here's a video
           recording that demonstrates the solution we pitched on this hackathon.
         </p>
         <br>
-        <iframe src="https://drive.google.com/file/d/1Aqv_wocrHh2DzlagYKC0n52F2mFw4DnT/preview" width="1080" 
-        height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <iframe src="https://drive.google.com/file/d/1Aqv_wocrHh2DzlagYKC0n52F2mFw4DnT/preview" width="960" height="480"
+          style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
         <br>
-        <p class="textColor">We ensured that there is a good amount of interaction involved in the application so that the 
-          participants will feel a great level of immersion thereby detatching themselves from the real world. Most of the 
-          controls can only be operated by physical movement of your hands which in turns drives the helicopter around in the 
-          scene. For example: To hold the flight control stick you move your hand next to stick and press a button on the Oculus
-          quest 2 controller and then as you move your hand in the real world the control stick follows your hand position which
+        <p class="textContent" style="text-align: justify;">We ensured that there is a good amount of interaction
+          involved in the application so that
+          the
+          participants will feel a great level of immersion thereby detatching themselves from the real world. Most of
+          the
+          controls can only be operated by physical movement of your hands which in turns drives the helicopter around
+          in the
+          scene. For example: To hold the flight control stick you move your hand next to stick and press a button on
+          the Oculus
+          quest 2 controller and then as you move your hand in the real world the control stick follows your hand
+          position which
           drives the helicopter along the position of the stick/hand.
         </p>
         <br>
-        <p class="textColor">
-          The 3D environment, Tempelhof Field, choosen for the application is constructed in Arcgis CityEngine. This provided
-          us an opportunity to place a real world environment with some realistic terrain and obstacles so the participants can 
-          get a better look and feel along with a significant level of immersiveness. We tried to use GIS plugins for game 
-          engines such as Cesium and ARCGis to load the 3D model on the fly but later dropped the plan since we couldn't find
+        <p class="textContent" style="text-align: justify;">
+          The 3D environment, Tempelhof Field, choosen for the application is constructed in Arcgis CityEngine. This
+          provided
+          us an opportunity to place a real world environment with some realistic terrain and obstacles so the
+          participants can
+          get a better look and feel along with a significant level of immersiveness. We tried to use GIS plugins for
+          game
+          engines such as Cesium and ARCGis to load the 3D model on the fly but later dropped the plan since we couldn't
+          find
           a free city model for Berlin that could be loaded into the application on the fly.
         </p>
       </header>
 
       <header class="major">
-        <h1>Event Photo</h1>
+        <h1 class="headerStyle">Event Photo</h1>
         <img src="{{ site.baseurl }}/assets/images/weAreVRGame.jpeg">
       </header>
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
+
 </html>
