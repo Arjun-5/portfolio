@@ -17,10 +17,27 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
   .background {
     background-color: rgba(26, 27, 38, 0.75);
     background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
     background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
   }
 
   .infoContainer {
@@ -34,11 +51,11 @@
   <section class="background">
     <div class="inner">
       <header class="major">
-        <h1 style="color: #cfc9c2; font-family: 'Cooper Black';">{{ page.title }}</h1>
-        <p style="color: #F2AA4C; font-family: 'Perpetua';">Here's the collection of projects(Solo and group) that I
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">Here's the collection of projects(Solo and group) that I
           have worked so far in the last few years. This is not a
           complete list but just a few that I thought would be nice to present here.
-        </p>
+          </p>
       </header>
     </div>
   </section>
