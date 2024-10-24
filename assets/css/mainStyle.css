@@ -156,14 +156,14 @@ a{
 }
 @font-face {
 	font-family: 'Cooper Black';
-	src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+	src: url('/assets/fonts/COOPBL.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Perpetua';
-	src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+	src: url('/assets/fonts/Perpetua.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
