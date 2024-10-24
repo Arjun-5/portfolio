@@ -4,180 +4,245 @@
 {% include header.html %}
 
 <style>
-.textColor{
-  color: #F2AA4C;
-}
-.customList {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
+  .textColor {
+    color: #F2AA4C;
+  }
 
-.demo {
-    width:80%;
-}
-.demo ul {
+  .customList {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .demo {
+    width: 80%;
+  }
+
+  .demo ul {
     list-style: none outside none;
     padding-left: 0;
-    margin-bottom:0;
-}
-.demo li {
+    margin-bottom: 0;
+  }
+
+  .demo li {
     display: block;
     float: left;
     margin-right: 6px;
-    cursor:pointer;
-}
-.demo img {
+    cursor: pointer;
+  }
+
+  .demo img {
     display: block;
     height: auto;
     max-width: 100%;
-}
+  }
 
+  @font-face {
+    font-family: 'Cooper Black';
+    src: url('{{ site.baseurl }}/assets/fonts/COOPBL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: 'Perpetua';
+    src: url('{{ site.baseurl }}/assets/fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('{{ site.baseurl }}/assets/fonts/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .headerStyle {
+    color: #cfc9c2;
+    font-family: 'Cooper Black';
+  }
+
+  .background {
+    background-color: rgba(26, 27, 38, 0.75);
+    background-image: url("{{ site.baseurl }}/assets/images/Gradient.png");
+    background-blend-mode: overlay;
+  }
+
+  .textContent {
+    font-family: 'Quicksand';
+    color: #7aa2f7;
+  }
 </style>
-<body>    
-  <section>
+
+<body>
+  <section class="background">
     <div class="inner">
       <header class="major">
-          <h1>{{ page.title }}</h1>
-          <p class="textColor">I, along with two other friends of mine from Technische Universität Berlin participated in the 
-            2022 MÜNSTERHACK <a href="https://www.muensterhack.de" target="_blank">
-            hackathon</a> held in Münster from 23<sup>rd</sup> 
-            September to 25<sup>th</sup> September 2022. The concept was to propose and develop ideas and prototypes to make use
-            of various collection of open data based on Münster to ensure that the city is even more liveable and accessible.
-          </p>
+        <h1 class="headerStyle">{{ page.title }}</h1>
+        <span class="textContent">I, along with two other friends of mine from Technische Universität Berlin
+          participated in
+          the
+          2022 MÜNSTERHACK <a href="https://www.muensterhack.de" target="_blank" class="textColor">
+            hackathon</a> held in Münster from 23<sup>rd</sup>
+          September to 25<sup>th</sup> September 2022. The concept was to propose and develop ideas and prototypes to
+          make use
+          of various collection of open data based on Münster to ensure that the city is even more liveable and
+          accessible.
+        </span>
       </header>
 
-      <header class = "major">
-        <h1>Proposed Idea</h1>
-      
+      <header class="major">
+        <h1 class="headerStyle">Proposed Idea</h1>
+
         <div class="munsterHackSlide">
           <ul id="muensterhackLightSlider">
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_1.png">
-                  <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_1.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_2.png">
-                  <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_2.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_3.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_3.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_4.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_4.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_5.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_5.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_6.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_6.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_7.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_7.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_8.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_8.png" />
-              </li>
-              <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_9.png">
-                <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_9.png" />
-              </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_1.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_1.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_2.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_2.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_3.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_3.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_4.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_4.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_5.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_5.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_6.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_6.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_7.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_7.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_8.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_8.png" />
+            </li>
+            <li data-thumb="{{ site.baseurl }}/assets/images/MunsterHack/Munster_9.png">
+              <img src="{{ site.baseurl }}/assets/images/MunsterHack/Munster_9.png" />
+            </li>
           </ul>
-      </div>
+        </div>
       </header>
 
-      <header class = "major">
-        <h1>Tools & Softwares Used</h1>
-        <p class="textColor"> Unreal Engine 5.0, Cesium for Unreal Engine, Photoshop and ArcGIS CityEngine</p>
+      <header class="major">
+        <h1 class="headerStyle">Tools & Softwares Used</h1>
+        <span class="textContent"> Unreal Engine 5.0, Cesium for Unreal Engine, Photoshop and ArcGIS CityEngine</span>
       </header>
 
-      <header class ="major">
-        <h1>Team Information</h1>
-        <ul class="textColor customList" style="color: #F2AA4C;">
+      <header class="major">
+        <h1 class="headerStyle">Team Information</h1>
+        <ul class="textContent customList">
           <li>
-            <a href = "https://www.linkedin.com/in/rahult5/">
+            <a href="https://www.linkedin.com/in/rahult5/" style="color: #F2AA4C;">
               Rahul
-            </a> - Prototype development Using Unreal Engine 
-            (C++/Blueprint) and research on Arcgis and Cesium for Game Engine 
+            </a> - Prototype development Using Unreal Engine
+            (C++/Blueprint) and research on Arcgis and Cesium for Game Engine
           </li>
           <br>
           <li>
-            <a href="www.linkedin.com/in/palaniappan-mohan">Palaniappan Mohan</a>- 
+            <a href="www.linkedin.com/in/palaniappan-mohan" style="color: #F2AA4C;">Palaniappan Mohan</a>-
             3D City designing using Arcgis CityEngine and research on Arcgis and Cesium for Game Engine
           </li>
           <br>
           <li>
-            <a href="https://in.linkedin.com/in/subhashini-k-999b729b">Subhashini K</a>- Research on Arcgis and Cesium for 
+            <a href="https://in.linkedin.com/in/subhashini-k-999b729b" style="color: #F2AA4C;">Subhashini K</a>-
+            Research on Arcgis and Cesium
+            for
             Game Engine
           </li>
         </ul>
       </header>
 
-      <header class ="major">
-        <h1>Project Description</h1>
-        <p class="textColor">The project was setup completely in Unreal Engine 5.0 and it was designated to run on desktop devices. 
-          The development spanned over a period of 4 days - I was mostly working on it after my work hours. The aim was to use a
-          lot of data we could collect on Munster and present a 3D version of the same using the game engine so as to demonstrate
-          the potential of interactive data visualization using Game Engines. Here's a video recording that demonstrates the 
+      <header class="major">
+        <h1 class="headerStyle">Project Description</h1>
+        <span class="textContent">The project was setup completely in Unreal Engine 5.0 and it was designated to run on
+          desktop devices.
+          The development spanned over a period of 4 days - I was mostly working on it after my work hours. The aim was
+          to use a
+          lot of data we could collect on Munster and present a 3D version of the same using the game engine so as to
+          demonstrate
+          the potential of interactive data visualization using Game Engines. Here's a video recording that demonstrates
+          the
           product that we pitched on this hackathon.
-        </p>
+        </span>
+        <br><br>
+        <iframe src="https://docs.google.com/file/d/1XpvvEmmaDsueu-hnhj1vS4HtyGDI1dwB/preview" width="1080" height="480"
+          style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
         <br>
-        <iframe src="https://docs.google.com/file/d/1XpvvEmmaDsueu-hnhj1vS4HtyGDI1dwB/preview" width="1080" 
-        height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
-        <br>
-        <p class="textColor">We used three different data sets in the application to support our idea of using Game Engine as a
+        <span class="textContent">We used three different data sets in the application to support our idea of using Game
+          Engine as a
           capability for interactive data visualization. The three different data sets used were :
-        </p>
-        <br>
-        <ul class="textColor customList" style="color: #F2AA4C;">
+        </span>
+        <br><br>
+        <ul>
           <li>
-            Representing Live Bus Data - We collect the live Bus Data of Munster from <a href="https://api.busradar.conterra.de"
-            target=”_blank”>here</a> and use that information in the App to position the bus model on the cesium provided map
-            based on the geo coordinates we receive. These geo coordinates are requested from the app every 30 seconds and the
-            location is upadted accordingly.
+            <span class="textContent" style="color: #F2AA4C;">Representing Live Bus Data - </span><span
+              class="textContent">We collect the live Bus Data of Munster from <a
+                href="https://api.busradar.conterra.de" target=”_blank”>here</a> and use that information in the App to
+              position the bus model on the cesium provided map
+              based on the geo coordinates we receive. These geo coordinates are requested from the app every 30 seconds
+              and the
+              location is upadted accordingly.</span>
           </li>
-        <br>
-        <li>
-          Representing Umweltzone/Low emission zone - Next up we thought of presenting the <a href="https://geo7.stadt-muenster.de/webgis/map/?wmsurl=https://www.stadt-muenster.de/ows/mapserv706/odumzoneserv&wmslayer=umweltzone&titel=Umweltzone"
-          target=”_blank”>low emission zone</a> in and around Munster on the cesium provided map. I had to download a geo json data 
-          that was provided on the open data portal for munster and used the coordinates in it to plot the low emission zone on the map.
-          And that information is represented using a pink/red boundary.
-          location is upadted accordingly.
-        </li>
-        <br>
-        <li>
-          3D City Model of Munster generated using Arcgis City Engine - And finally we thought of presenting a real city model of
-          munster and map/positon that model on to the cesium map based on the geo coordinates. The 3D model of the city was 
-          generated in Arcgis city engine and then it was brought into Unreal Engine and was assigned a cesium based component that
-          enable us to tag the model using geo coordinates. When provided with the appropriate geo coordinate values the 3D
-          model will automatically be positioned on the map. 
-        </li>
+          <br>
+          <li>
+            <span class="textContent" style="color: #F2AA4C;">Representing Umweltzone/Low emission zone - </span><span
+              class="textContent">Next up we thought of presenting the <a
+                href="https://geo7.stadt-muenster.de/webgis/map/?wmsurl=https://www.stadt-muenster.de/ows/mapserv706/odumzoneserv&wmslayer=umweltzone&titel=Umweltzone"
+                target=”_blank”>low emission zone</a> in and around Munster on the cesium provided map. I had to
+              download
+              a geo json data
+              that was provided on the open data portal for munster and used the coordinates in it to plot the low
+              emission zone on the map.
+              And that information is represented using a pink/red boundary.
+              location is upadted accordingly.</span>
+          </li>
+          <br>
+          <li><span class="textContent" style="color: #F2AA4C;">3D City Model of Munster generated using Arcgis City
+              Engine - </span>
+            <span class="textContent">And finally we thought of presenting a real
+              city model of
+              munster and map/positon that model on to the cesium map based on the geo coordinates. The 3D model of the
+              city was
+              generated in Arcgis city engine and then it was brought into Unreal Engine and was assigned a cesium based
+              component that
+              enable us to tag the model using geo coordinates. When provided with the appropriate geo coordinate values
+              the 3D
+              model will automatically be positioned on the map.</span>
+          </li>
         </ul>
-        <iframe src="https://drive.google.com/file/d/1iv8z4ApC6Zo9T97oGB8NWtTeW96CpQvN/preview" width="1080" 
-        height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
+        <iframe src="https://drive.google.com/file/d/1iv8z4ApC6Zo9T97oGB8NWtTeW96CpQvN/preview" width="1080"
+          height="480" style="display: block;margin: 0 auto;" allow="autoplay" allowfullscreen="true"></iframe>
       </header>
 
       <header class="major">
-        <h1>Event Photo</h1>
-        <img src="{{ site.baseurl }}/assets/images/MunsterHack/munsterHack.jpeg">
+        <h1 class="headerStyle">Event Photo</h1>
+        <img style="display: block;margin: 0 auto;" src="{{ site.baseurl }}/assets/images/MunsterHack/munsterHack.jpeg">
       </header>
     </div>
   </section>
 
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
 <script>
-$('#muensterhackLightSlider').lightSlider({
+  $('#muensterhackLightSlider').lightSlider({
     gallery: true,
     item: 1,
-    loop:true,
+    loop: true,
     slideMargin: 0,
     thumbItem: 9,
-    speed: 400, 
+    speed: 400,
     auto: true,
     loop: true,
     slideEndAnimation: true,
     pause: 2000
-});
-  </script>
+  });
+</script>
+
 </html>
